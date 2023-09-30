@@ -29,7 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php faithwork_post_thumbnail(); ?>
+	<?php faithwork_theme_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php faithwork_entry_footer(); ?>
+		<?php faithwork_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
