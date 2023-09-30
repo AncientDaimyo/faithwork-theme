@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				faithwork_posted_on();
-				faithwork_posted_by();
+				faithwork_theme_posted_on();
+				faithwork_theme_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
