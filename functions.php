@@ -114,6 +114,8 @@ function faithwork_theme_content_width() {
 }
 add_action( 'after_setup_theme', 'faithwork_theme_content_width', 0 );
 
+
+
 /**
  * Register widget area.
  *
@@ -142,12 +144,17 @@ function faithwork_theme_scripts() {
 	wp_style_add_data( 'faithwork-theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'faithwork-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'faithwork-theme-burger', get_template_directory_uri() . '/js/burger.js', array(), 1.0, true );
+	wp_enqueue_script( 'faithwork-theme-menu', get_template_directory_uri() . '/js/menu.js', array(), 1.0, true );
+	wp_enqueue_script( 'faithwork-theme-scroll', get_template_directory_uri() . '/js/scroll.js', array(), 1.0, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'faithwork_theme_scripts' );
+
+
 
 /**
  * Implement the Custom Header feature.
@@ -185,6 +192,13 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 add_filter( 'get_custom_logo', 'change_logo_class' );
 function change_logo_class( $html ) {
-    $html = str_replace( 'custom-logo', 'faithwork-logo', $html );
+    $html = str_replace( 'custom-logo"', 'faithwork-logo" id="logo1" ', $html );
     return $html;
 }
+
+add_filter( 'get_custom_logo', 'add_second_logo' );
+function add_second_logo( $html ) {
+    $html = str_replace( '<img', '<img id="logo2" class="faithwork-logo inactive" src="' . get_theme_mod('test_img') . '"><img', $html );
+    return $html;
+}
+

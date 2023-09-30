@@ -15,6 +15,26 @@ function faithwork_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+		
+	//section
+	$wp_customize->add_section('test_section' , array(
+		'title'    => 'Test Section',
+		'priority' => 99,
+	  ));
+  
+	  //text field
+	  $wp_customize->add_setting('test_img', array(
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+		'default' => '',
+	));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'test_img', array(
+		'label'    => 'Image',
+		'section'  => 'test_section',
+		'settings' => 'test_img',
+	)));
+
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
 			'blogname',
@@ -30,9 +50,13 @@ function faithwork_theme_customize_register( $wp_customize ) {
 				'render_callback' => 'faithwork_theme_customize_partial_blogdescription',
 			)
 		);
+
+		
 	}
 }
 add_action( 'customize_register', 'faithwork_theme_customize_register' );
+
+
 
 /**
  * Render the site title for the selective refresh partial.
