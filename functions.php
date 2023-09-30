@@ -202,13 +202,3 @@ function add_second_logo( $html ) {
     return $html;
 }
 
-add_action( 'rest_api_init', function(){
-
-	register_rest_route( 'faithwork-theme', 'update_theme', array(
-		array(
-			'methods'  => 'POST',
-			'callback' => 'update_theme',
-		)
-	) );
-
-} );
