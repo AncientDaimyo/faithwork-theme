@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,17 +12,37 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="footer-top">
-			<img class="footer-image" src="~/faithwork-theme/pic/Faithwork_Name_Logo.png">
-		</div>
-		<div class="footer-bottom">
-
-		</div>
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+	<div class="footer-top">
+		<img class="footer-image" src="wp-content/themes/faithwork-theme/pic/FAITHWORK_LOGO_Header_Crop_Black.png">
+	</div>
+	<div class="footer-bottom">
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-2',
+				'menu_id'        => 'footer-menu-1',
+			)
+		);
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-3',
+				'menu_id'        => 'footer-menu-2',
+			)
+		);
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-4',
+				'menu_id'        => 'footer-menu-3',
+			)
+		);
+		?>
+	</div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
