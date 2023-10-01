@@ -53,8 +53,8 @@
 				?>
 			</nav><!-- #site-navigation -->
 			<nav class="navigation-icons">
-				<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+				<a href="#" class="nav-icon">
+					<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
 						<mask id="mask0_7_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
 							<rect width="35" height="35" fill="white" />
 						</mask>
@@ -63,8 +63,8 @@
 						</g>
 					</svg>
 				</a>
-				<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+				<a href="#" class="nav-icon">
+					<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
 						<mask id="mask0_7_26" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
 							<rect width="32" height="32" fill="white" />
 						</mask>
@@ -73,8 +73,8 @@
 						</g>
 					</svg>
 				</a>
-				<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+				<a href="#" class="nav-icon">
+					<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 						<mask id="mask0_7_32" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34">
 							<rect width="34" height="34" fill="white" />
 						</mask>
@@ -83,8 +83,8 @@
 						</g>
 					</svg>
 				</a>
-				<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+				<a href="#" class="nav-icon">
+					<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
 						<mask id="mask0_7_20" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
 							<rect width="30" height="30" fill="white" />
 						</mask>
