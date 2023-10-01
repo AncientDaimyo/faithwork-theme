@@ -1,8 +1,8 @@
-var  header = document.querySelector('header');
-var  logo1 = document.querySelector('#logo1');
-var  logo2 = document.querySelector('#logo2');
-var  main = document.querySelector('main');
-var  minOffset = 50;
+var header = document.querySelector('header');
+var logo1 = document.querySelector('#logo1');
+var logo2 = document.querySelector('#logo2');
+var main = document.querySelector('main');
+var minOffset = 50;
 window.addEventListener('scroll', headerScroll);
 
 function headerScroll() {
