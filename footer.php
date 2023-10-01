@@ -20,19 +20,19 @@
 		<?php
 		wp_nav_menu(
 			array(
-				'theme_location' => 'menu-2',
+				'theme_location' => 'footer-menu-left',
 				'menu_id'        => 'footer-menu-1',
 			)
 		);
 		wp_nav_menu(
 			array(
-				'theme_location' => 'menu-3',
+				'theme_location' => 'footer-menu-center',
 				'menu_id'        => 'footer-menu-2',
 			)
 		);
 		wp_nav_menu(
 			array(
-				'theme_location' => 'menu-4',
+				'theme_location' => 'footer-menu-right',
 				'menu_id'        => 'footer-menu-3',
 			)
 		);

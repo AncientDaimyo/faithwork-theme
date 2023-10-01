@@ -49,7 +49,10 @@ function faithwork_theme_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'faithwork-theme' ),
+			'header-menu' => esc_html__( 'Primary', 'faithwork-theme' ),
+			'footer-menu-left' => esc_html__( 'Primary', 'faithwork-theme' ),
+			'footer-menu-center' => esc_html__( 'Primary', 'faithwork-theme' ),
+			'footer-menu-right' => esc_html__( 'Primary', 'faithwork-theme' )
 		)
 	);
 
