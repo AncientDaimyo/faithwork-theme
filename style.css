@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: faithwork-theme
 Theme URI: http://underscores.me/
 Author: Underscores.me
@@ -397,9 +397,9 @@ template {
 
 /*#region FONTS  */
 /* Human Sans bold, medium*/
-@font-face {
+/* @font-face {
 	font-family: "HumanSans";
-	src: url("wp-content/themes/faithwork-theme/fonts/HumanSans-Bold.woff") format("woff");
+	src: url("~/wp-content/themes/faithwork-theme/fonts/HumanSans-Bold.woff") format("woff");
 	font-stretch: normal;
 	font-variant: normal;
 	font-style: bold;
@@ -408,12 +408,12 @@ template {
 
 @font-face {
 	font-family: "HumanSans";
-	src: url("wp-content/themes/faithwork-theme/fonts/HumanSans-Medium.woff") format("woff");
+	src: url("~/wp-content/themes/faithwork-theme/fonts/HumanSans-Medium.woff") format("woff");
 	font-weight: 600;
 	font-stretch: normal;
 	font-variant: normal;
 	font-style: medium;
-}
+} */
 
 html {
 	font-family: "HumanSans", sans-serif !important;
@@ -1182,7 +1182,6 @@ textarea {
 	margin: 0;
 	position: fixed;
 	width: 100%;
-	display: block;
 	height: var(--logo-width);
 	background-color: black;
 	z-index: 100;
@@ -1229,8 +1228,11 @@ textarea {
 
 .menu-toggle::before {
 	top: 0;
-	box-shadow: 0 11px 0 #ffffff;
 	transition: box-shadow .4s .2s, top .4s .2s, transform .4s;
+}
+
+.menu-toggle::before {
+	box-shadow: 0 11px 0 #ffffff;
 }
 
 .menu-toggle::after {
@@ -1241,16 +1243,22 @@ textarea {
 .menu-toggle.active::before {
 	top: 11px;
 	transform: rotate(45deg);
+	transition: box-shadow .2s, top .4s, transform .4s .2s;
+}
+
+.menu-toggle.active::before {
 	box-shadow: 0 0 0 #000000;
 	background: #000000;
-	transition: box-shadow .2s, top .4s, transform .4s .2s;
 }
 
 .menu-toggle.active::after {
 	bottom: 11px;
 	transform: rotate(-45deg);
-	background: #000000;
 	transition: bottom .4s, transform .4s .2s;
+}
+
+.menu-toggle.active::after {
+	background: #000000;
 }
 
 .menu-toggle.black::before,
@@ -1267,8 +1275,11 @@ textarea {
 
 .menu-toggle.black::before {
 	top: 0;
-	box-shadow: 0 11px 0 #000000;
 	transition: box-shadow .4s .2s, top .4s .2s, transform .4s;
+}
+
+.menu-toggle.black::before {
+	box-shadow: 0 11px 0 #000000;
 }
 
 .menu-toggle.black::after {
@@ -1279,8 +1290,11 @@ textarea {
 .menu-toggle.black.active::before {
 	top: 11px;
 	transform: rotate(45deg);
-	box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
 	transition: box-shadow .2s, top .4s, transform .4s .2s;
+}
+
+.menu-toggle.black.active::before {
+	box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
 }
 
 .menu-toggle.black.active::after {
@@ -1321,7 +1335,6 @@ textarea {
 
 header.is_scrolled {
 	background-color: white;
-	top: 0;
 }
 
 header.is_scrolled nav div ul li a {
@@ -1338,6 +1351,12 @@ header.is_scrolled nav div ul li a {
 	justify-content: flex-end;
 	align-items: center;
 	z-index: 100;
+}
+
+.navigation-icons.active {
+	left: 20vw;
+	justify-content: space-between;
+	transition: 1s;
 }
 
 .nav-icon {
@@ -1464,12 +1483,19 @@ main.main-scroll {
 	* {
 		--menu-spacing: 22px;
 	}
-
+	body {
+		height: 100vh !important;
+	} 
 	.site-header {
 		border-bottom-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 	}
-
+	.navigation-icons {
+		display: none;
+	}
+	.navigation-icons.active {
+		display: flex;
+	}
 }
 
 /*#endregion FOR MOBILE DEVICES*/

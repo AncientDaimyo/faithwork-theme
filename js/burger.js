@@ -1,5 +1,6 @@
 const el = document.getElementsByTagName('button')[0];
-const navicons = document.querySelectorAll('svg.header-svg');
+const navicons = document.querySelectorAll('.header-svg');
+const iconsblock = document.querySelector('.navigation-icons');
 
 
 
@@ -8,7 +9,7 @@ function burger() {
     el.classList.toggle('active');
     let is_active = el.classList.contains("active");
     if (is_active) {
-        navicons.classList.add("active");
+        iconsblock.classList.add('active');
         navicons.forEach((navicon) => {
             let is_black = navicon.classList.contains("black");
             if (!is_black) {
@@ -17,7 +18,7 @@ function burger() {
         });
     }
     else {
-        navicons.classList.remove("active");
+        iconsblock.classList.remove('active');
         if (is_scrolled) {
             navicons.forEach((navicon) => {
                 let is_black = navicon.classList.contains("black");
@@ -37,9 +38,5 @@ function burger() {
     }
 
 
-}
-
-if (el) {
-    el.addEventListener('click', burger);
 }
 
