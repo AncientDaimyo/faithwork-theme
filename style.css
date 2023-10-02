@@ -1382,7 +1382,7 @@ ul.sub-menu {
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	
+	background-color: #EFEFEF;
 }
 /* ----------------------------------------FOOTER */
 
