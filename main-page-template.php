@@ -9,7 +9,7 @@ get_header();
 
 <main id="primary" class="site-main custom">
     <section class="main-block first">
-        <img src="faithwork-theme\pic\IMG_3602.JPG" alt="">
+        <img src="faithwork-theme\pic\IMG_3602.png" alt="">
     </section>
     <section class="main-block second"></section>
     <section class="main-block third"></section>
