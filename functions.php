@@ -151,7 +151,8 @@ function faithwork_theme_scripts() {
 	wp_enqueue_script( 'faithwork-theme-menu', get_template_directory_uri() . '/js/menu.js', array(), 1.0, true );
 	wp_enqueue_script( 'faithwork-theme-scroll', get_template_directory_uri() . '/js/scroll.js', array(), 1.0, true );
 	wp_enqueue_script( 'jquery');
-
+	wp_enqueue_script( 'jquery-marquee', 'https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js');
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
