@@ -208,7 +208,22 @@ function add_second_logo( $html ) {
     return $html;
 }
 
-add_action( 'woocommerce_single_product_summary', 'wpbl_exmaple_hook', 20);
-function wpbl_exmaple_hook(){
-    echo '<div class="wbpl_share">Рассказать друзьям нашу майку и получите купон на 5% скидку!<br><strong>Поделиться:</strong> <a href="https://vk.com/share.php?url=https://wordpresslab.ru/">Вконтакте</a>, <a href="https://connect.ok.ru/offer?url=https://wordpresslab.ru/">Одноклассники</a></div>';
-} 
+/**
+ * TESTING
+ */
+
+ add_filter( 'woocommerce_checkout_fields' , 'wpbl_show_fields' );
+ 
+function wpbl_show_fields( $array ) {
+    
+    // Выводим список полей, но только если пользователь имеет права админа
+    if( current_user_can( 'manage_options' ) ){
+    
+        echo '<pre>';
+        print_r( $array);
+        echo '</pre>';
+
+    }
+    
+    return $array;
+}
