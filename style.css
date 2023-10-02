@@ -1197,6 +1197,10 @@ textarea {
 	font-size: 3opx;
 }
 
+.site-header:hover {
+	background-color: black;
+}
+
 .faithwork-logo {
 	height: var(--logo-width) !important;
 	width: var(--logo-width) !important;
