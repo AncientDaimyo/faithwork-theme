@@ -3,6 +3,6 @@ jQuery(function() {
       duration: 7000,
       startVisible: true,
       duplicated: true,
-      gap: 10
+      gap: 5
     });
   });
