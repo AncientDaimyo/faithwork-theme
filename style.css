@@ -1574,8 +1574,10 @@ main.main-scroll {
 	height: calc(100vh - var(--logo-width));
 }
 
-.main-block.first {
+.main-block.first img {
 	background-color: transparent;
+	width: 100vw;
+	height: auto;
 }
 
 .main-block.second {
