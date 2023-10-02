@@ -1377,6 +1377,13 @@ svg.header-svg.black {
 	filter: invert(100%);
 }
 
+ul.sub-menu {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
+}
 /* ----------------------------------------FOOTER */
 
 .site-footer {
