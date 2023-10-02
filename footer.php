@@ -22,19 +22,22 @@
 			wp_nav_menu(
 				array(
 					'theme_location' => 'footer-menu-left',
-					'menu_id'        => 'footer-menu-1',
+					'container'		 => 'div',
+					'container_id'   => 'footer-menu-1'
 				)
 			);
 			wp_nav_menu(
 				array(
 					'theme_location' => 'footer-menu-center',
-					'menu_id'        => 'footer-menu-2',
+					'container'		 => 'div',
+					'container_id'   => 'footer-menu-2',
 				)
 			);
 			wp_nav_menu(
 				array(
 					'theme_location' => 'footer-menu-right',
-					'menu_id'        => 'footer-menu-3',
+					'container'		 => 'div',
+					'container_id'   => 'footer-menu-3',
 				)
 			);
 			?>
