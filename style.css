@@ -1192,7 +1192,7 @@ textarea {
 	position: fixed;
 	width: 100%;
 	height: var(--logo-width);
-	background-color: black;
+	background-color: transparent;
 	z-index: 100;
 	font-size: 3opx;
 }
