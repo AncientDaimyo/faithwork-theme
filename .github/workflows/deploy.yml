@@ -16,5 +16,5 @@ jobs:
       - run: echo "$" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
       # Deploy
-      - run: ssh u1852918@faithwork.ru:/www/faithwork.online/wp-content/themes/faithwork-theme  
+      - run: ssh u1852918@faithwork.ru
       - run: Z6dIW2YOpqc6sWr3
