@@ -1593,29 +1593,5 @@ main.main-scroll {
 /*#region MARQUEE  */
 
 
-.marquee {
-	position: relative;
-	width: 200vw;
-	max-width: 100%;
-	height: 200px;
-	overflow-x: hidden;
-}
-
-.track {
-	position: absolute;
-	white-space: nowrap;
-	will-change: transform;
-	animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-	from {
-		transform: translateX(0);
-	}
-
-	to {
-		transform: translateX(-50%);
-	}
-}
 
 /*#endregion  */

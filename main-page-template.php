@@ -37,12 +37,6 @@ get_header();
 
     // endif;
     ?>
-    <div class="marquee">
-        <div class="track">
-            <div class="marquee-content">
-                &nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence  
-            </div>
-        </div>
-    </div>
+    <div class="marquee">Бабки бабки сука бабки</div>
 </main>
 <?php get_footer(); ?>
