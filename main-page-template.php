@@ -37,6 +37,6 @@ get_header();
 
     // endif;
     ?>
-
+    <marquee behavior="scroll" direction="right">Бегущая строка</marquee>
 </main>
 <?php get_footer(); ?>
