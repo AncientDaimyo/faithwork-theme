@@ -39,7 +39,9 @@ get_header();
     ?>
     <div class="marquee">
         <div class="track">
-            <div class="marquee-content">&nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence</div>
+            <div class="marquee-content">
+                &nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence &nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence
+            </div>
         </div>
     </div>
 </main>
