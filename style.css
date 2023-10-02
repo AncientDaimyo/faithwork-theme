@@ -1614,7 +1614,7 @@ main.main-scroll {
 	}
 
 	to {
-		transform: translateX(0);
+		transform: translateX(100%);
 	}
 }
 
