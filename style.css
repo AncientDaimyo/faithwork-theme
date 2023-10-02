@@ -1525,7 +1525,7 @@ html {
 
 main {
 	display: block;
-	margin-top: var(--logo-width);
+	margin-top: 0px;
 	scroll-behavior: smooth;
 	transition: .5s;
 }
