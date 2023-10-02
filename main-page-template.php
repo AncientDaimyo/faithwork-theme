@@ -60,7 +60,7 @@ get_header();
         //
     </script>
     <script type="text/javascript">
-        tekst("Бегущая в JavaScript", 50)
+        tekst("Бегущая в JavaScript", "100vw")
     </script>
 </main>
 <?php get_footer(); ?>
