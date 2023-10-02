@@ -208,25 +208,7 @@ function add_second_logo( $html ) {
     return $html;
 }
 
-/**
- * TESTING
- */
-
- add_filter( 'woocommerce_checkout_fields' , 'wpbl_show_fields' );
- 
-function wpbl_show_fields( $array ) {
-    
-    // Выводим список полей, но только если пользователь имеет права админа
-    if( current_user_can( 'manage_options' ) ){
-    
-        echo '<pre>';
-        print_r( $array);
-        echo '</pre>';
-
-    }
-    
-    return $array;
-}
+/** TESTING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
 
 add_filter( 'woocommerce_checkout_fields', 'wpbl_remove_some_fields', 9999 );
  
