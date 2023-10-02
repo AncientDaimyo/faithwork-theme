@@ -617,7 +617,7 @@ template {
 
 /*#region TEXT OPTIONS */
 .nav-menu li a {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 h1 {
@@ -1166,7 +1166,7 @@ textarea {
 
 @media (max-width: 1600px) {
 	* {
-		--logo-width: 88px;
+		--logo-width: 64px;
 		--menu-spacing: 110px;
 		--menu-probely: 22px;
 		--font-size: 20px;
@@ -1175,7 +1175,7 @@ textarea {
 
 @media (min-width: 1600px) {
 	* {
-		--logo-width: 5.5vw;
+		--logo-width: 3.3vw;
 		--menu-spacing: 5.7vw;
 		--menu-probely: 1.94vw;
 		--font-size: 1vw;
