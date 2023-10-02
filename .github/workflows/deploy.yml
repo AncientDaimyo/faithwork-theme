@@ -8,7 +8,7 @@ on:
 env:
   SERVER_HOST: faithwork.ru
   SERVER_USER: u1852918
-  SERVER_PATH: /www/faithwork.online/wp-content/themes/faithwork-theme  
+  SERVER_PATH: /var/www/u1852918/data/www/faithwork.online/wp-content/themes/faithwork-theme  
 
 jobs:
   deploy:
