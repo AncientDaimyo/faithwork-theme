@@ -235,3 +235,19 @@ function wpbl_remove_some_fields( $array ) {
     // Возвращаем обработанный массив
     return $array;
 }
+
+add_filter( 'woocommerce_checkout_fields', 'wplb_reorder', 9999 );
+ 
+function wplb_reorder( $array ) {
+    
+    // Меняем приоритет
+    $array['billing']['billing_email']['priority'] = 30;
+    $array['billing']['billing_phone']['priority'] = 40;
+    
+    // Назначаем CSS классы
+    $array['billing']['billing_email']['class'][0] = 'form-row-first';
+    $array['billing']['billing_phone']['class'][0] = 'form-row-last';
+    
+    // Возвращаем обработанный массив
+    return $array;
+}
