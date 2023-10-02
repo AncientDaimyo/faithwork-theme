@@ -397,24 +397,7 @@ template {
 /*#endregion  */
 
 /*#region FONTS  */
-/* Human Sans bold, medium*/
-/* @font-face {
-	font-family: "HumanSans";
-	src: url("~/wp-content/themes/faithwork-theme/fonts/HumanSans-Bold.woff") format("woff");
-	font-stretch: normal;
-	font-variant: normal;
-	font-style: bold;
-	font-weight: 600;
-}
 
-@font-face {
-	font-family: "HumanSans";
-	src: url("~/wp-content/themes/faithwork-theme/fonts/HumanSans-Medium.woff") format("woff");
-	font-weight: 600;
-	font-stretch: normal;
-	font-variant: normal;
-	font-style: medium;
-} */
 
 html {
 	font-family: "HumanSans", sans-serif !important;
@@ -1401,6 +1384,7 @@ ul.sub-menu {
 .header-svg {
 	transform: scale(0.75, 0.75);
 }
+
 /* ----------------------------------------FOOTER */
 
 .site-footer {
@@ -1520,7 +1504,7 @@ ul.sub-menu {
 	align-items: center;
 }
 
-.footer-second-social a{
+.footer-second-social a {
 	display: flex !important;
 	margin-left: calc(var(--menu-probely) / 2);
 	margin-right: calc(var(--menu-probely) / 2);
@@ -1604,4 +1588,12 @@ main.main-scroll {
 	background-color: red;
 }
 
+/*#endregion  */
+
+/*#region MARQUEE  */
+
+
+.marquee {
+	width: 110vw;
+}
 /*#endregion  */
