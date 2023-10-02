@@ -1593,5 +1593,7 @@ main.main-scroll {
 /*#region MARQUEE  */
 
 
-
+.marquee {
+	width: 110vw;
+}
 /*#endregion  */
