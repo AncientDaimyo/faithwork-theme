@@ -1384,6 +1384,10 @@ ul.sub-menu {
 	align-items: flex-start;
 	background-color: #EFEFEF;
 }
+
+.header-svg {
+	transform: scale(0.75, 0.75);
+}
 /* ----------------------------------------FOOTER */
 
 .site-footer {
