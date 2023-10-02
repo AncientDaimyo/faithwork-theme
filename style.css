@@ -1576,6 +1576,7 @@ main.main-scroll {
 
 .main-block.first {
 	background-image: url(faithwork-theme/pic/IMG_3602.JPG);
+	background-color: transparent;
 }
 
 .main-block.second {
