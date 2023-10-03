@@ -16,13 +16,11 @@ function faithwork_theme_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 		
-	//section
 	$wp_customize->add_section('test_section' , array(
 		'title'    => 'Test Section',
 		'priority' => 99,
 	  ));
   
-	  //text field
 	  $wp_customize->add_setting('test_img', array(
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw',
@@ -34,6 +32,27 @@ function faithwork_theme_customize_register( $wp_customize ) {
 		'section'  => 'test_section',
 		'settings' => 'test_img',
 	)));
+
+	$wp_customize->add_section('merquee' , array(
+		'title'    => 'Merquee',
+		'priority' => 99,
+	  ));
+  
+	  $wp_customize->add_setting('merquee_text', array(
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+		'default' => '',
+	));
+
+	$wp_customize->add_control( 
+		new WP_Customize_Control(
+			$wp_customize, 'merquee_text', array(
+			'label'    => 'merquee text',
+			'section'  => 'merquee',
+			'type'	   => 'text'
+			)
+		)
+	);
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
