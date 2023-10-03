@@ -11,7 +11,9 @@ get_header();
     <section class="main-block first">
         <img src="wp-content/themes/faithwork-theme/pic/bg_image.png">
     </section>
-    <section class="main-block second"></section>
+    <section class="main-block second">
+        <?php get_theme_mod('marque_text') ?>
+    </section>
     <section class="main-block third"></section>
     <?php
     // if ( have_posts() ) :
@@ -40,7 +42,7 @@ get_header();
 
 
     <div class="marquee" style="overflow: hidden;">
-        <?php get_theme_mod('marque_text')?>
+        <?php get_theme_mod('marque_text') ?>
     </div>
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </main>
