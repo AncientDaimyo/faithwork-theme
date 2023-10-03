@@ -1602,7 +1602,7 @@ main.main-scroll {
 
 
 .marquee {
-	width: 100%;
+	width: 110vw;
 	overflow: hidden;
 
 }
@@ -1610,16 +1610,8 @@ main.main-scroll {
 .marquee-content {
 	width:50px;
     height:50px;
-    background:red;
     margin-left:10px;
     display:inline-block;
 }
 
-.marquee-content:first-child {
-	margin-left: 0;
-}
-
-.wrapper {
-	width: 50%;
-}
 /*#endregion  */

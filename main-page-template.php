@@ -43,18 +43,18 @@ get_header();
     // endif;
     ?>
 
-    <div class="wrapper">
-        <div class="marquee" style="overflow: hidden;">
-            <?php
-            $marquee_text = '1';
-            for ($i = 1; $i <= 10; $i++) {
-            ?>
-                <div class="marquee-content"><?php echo ($marquee_text); ?></div>
-            <?php
-            }
-            ?>
-        </div>
+
+    <div class="marquee" style="overflow: hidden;">
+        <?php
+        $marquee_text = '1';
+        for ($i = 1; $i <= 10; $i++) {
+        ?>
+            <div class="marquee-content"><?php echo ($marquee_text); ?></div>
+        <?php
+        }
+        ?>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </main>
