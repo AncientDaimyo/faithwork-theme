@@ -15,7 +15,7 @@ get_header();
         </video>
     </section>
     <section class="main-block second">
-        <?php echo(get_theme_mod('marque_text')); ?>
+        <?php echo (get_theme_mod('marque_text')); ?>
     </section>
     <section class="main-block third"></section>
     <?php
@@ -45,8 +45,17 @@ get_header();
 
 
     <div class="marquee" style="overflow: hidden;">
-        <?php echo('test') ?>
+        <?php
+        $marquee_text = '1';
+        for ($i = 1; $i <= 10; $i++) {
+        ?>
+            <div class="marquee-content"><?php echo ($marquee_text); ?></div>
+        <?php
+        }
+        ?>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </main>
 <?php get_footer(); ?>
