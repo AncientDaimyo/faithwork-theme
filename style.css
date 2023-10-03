@@ -1583,7 +1583,7 @@ main.main-scroll {
 	height: calc(100vh - var(--logo-width));
 }
 
-.main-block.first source{
+.main-block.first video source{
 	width: 100vw;
 	height: auto;
 }
