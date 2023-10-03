@@ -1377,6 +1377,10 @@ svg.header-svg.black {
 	filter: invert(100%);
 }
 
+svg.header-svg:hover {
+	filter: invert(50%);
+}
+
 ul.sub-menu {
 	display: flex;
 	flex-flow: column nowrap;
