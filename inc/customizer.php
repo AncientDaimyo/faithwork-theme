@@ -48,11 +48,9 @@ function faithwork_theme_customize_register($wp_customize)
 
 	$wp_customize->add_control(
 		'text',
-		'marquee_text',
 		array(
-			'label'    => 'marquee text',
-			'section'  => 'marquee',
-			'type'	   => 'text'
+			'label'    => 'marquee_text',
+			'section'  => 'marquee'
 		)
 	);
 
