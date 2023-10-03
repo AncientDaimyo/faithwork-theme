@@ -12,7 +12,7 @@ get_header();
         <img src="wp-content/themes/faithwork-theme/pic/bg_image.png">
     </section>
     <section class="main-block second">
-        <?php get_theme_mod('marque_text') ?>
+        <?php echo(get_theme_mod('marque_text')); ?>
     </section>
     <section class="main-block third"></section>
     <?php
