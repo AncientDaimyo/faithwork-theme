@@ -12,7 +12,7 @@ get_header();
         <img src="wp-content/themes/faithwork-theme/pic/bg_image.png">
     </section>
     <section class="main-block second">
-        <?php echo(get_theme_mod('marque_text')); ?>
+        <?php echo (get_theme_mod('marque_text')); ?>
     </section>
     <section class="main-block third"></section>
     <?php
@@ -40,10 +40,19 @@ get_header();
     // endif;
     ?>
 
-
-    <div class="marquee" style="overflow: hidden;">
-        <?php echo('test') ?>
+    <div class="wrapper">
+        <div class="marquee" style="overflow: hidden;">
+            <?php
+            $marquee_text = 'Я ПОДЖИГПЛ ГОРОДА ПОКА ТЫ ОБИТАЛ';
+            for ($i = 1; $i <= 10; $i++) {
+            ?>
+                <div class="marquee-content"><?php echo ($marquee_text); ?></div>
+            <?php
+            }
+            ?>
+        </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </main>
 <?php get_footer(); ?>
