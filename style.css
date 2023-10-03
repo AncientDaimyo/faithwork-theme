@@ -1217,7 +1217,7 @@ textarea {
 	background: transparent;
 	width: 40px;
 	height: 26px;
-	margin: 30px auto;
+	margin: calc((var(--logo-width) - 4px) / 2) auto;
 }
 
 .menu-toggle::before,
