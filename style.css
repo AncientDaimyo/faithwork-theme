@@ -636,7 +636,12 @@ sup {
 
 a {
 	background-color: transparent;
+	color: grey;
 }
+
+a:hover {
+	background-color: transparent;
+}s
 
 h1,
 h2,
