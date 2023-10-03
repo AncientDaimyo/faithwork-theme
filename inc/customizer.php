@@ -1,5 +1,4 @@
 <?php
-
 /**
  * faithwork-theme Theme Customizer
  *
@@ -11,50 +10,51 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function faithwork_theme_customize_register($wp_customize)
-{
-	$wp_customize->get_setting('blogname')->transport         = 'postMessage';
-	$wp_customize->get_setting('blogdescription')->transport  = 'postMessage';
-	$wp_customize->get_setting('header_textcolor')->transport = 'postMessage';
+function faithwork_theme_customize_register( $wp_customize ) {
+	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-
-	$wp_customize->add_section('test_section', array(
+		
+	$wp_customize->add_section('test_section' , array(
 		'title'    => 'Test Section',
 		'priority' => 99,
-	));
-
-	$wp_customize->add_setting('test_img', array(
+	  ));
+  
+	  $wp_customize->add_setting('test_img', array(
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw',
 		'default' => '',
 	));
 
-	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'test_img', array(
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'test_img', array(
 		'label'    => 'Image',
 		'section'  => 'test_section',
 		'settings' => 'test_img',
 	)));
 
-	$wp_customize->add_section('marquee', array(
+	$wp_customize->add_section('marquee' , array(
 		'title'    => 'Marquee',
 		'priority' => 99,
-	));
-
-	$wp_customize->add_setting('marquee_text', array(
+	  ));
+  
+	  $wp_customize->add_setting('marquee_text', array(
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw',
 		'default' => '',
 	));
 
-	$wp_customize->add_control(
-		'text',
-		array(
-			'label'    => 'marquee_text',
-			'section'  => 'marquee'
+	$wp_customize->add_control( 
+		new WP_Customize_Control(
+			$wp_customize, 'marquee_text', array(
+			'label'    => 'MarqueeText',
+			'section'  => 'marquee',
+			'type'	   => 'text'
+			)
 		)
 	);
 
-	if (isset($wp_customize->selective_refresh)) {
+	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
 			'blogname',
 			array(
@@ -69,9 +69,11 @@ function faithwork_theme_customize_register($wp_customize)
 				'render_callback' => 'faithwork_theme_customize_partial_blogdescription',
 			)
 		);
+
+		
 	}
 }
-add_action('customize_register', 'faithwork_theme_customize_register');
+add_action( 'customize_register', 'faithwork_theme_customize_register' );
 
 
 
@@ -80,9 +82,8 @@ add_action('customize_register', 'faithwork_theme_customize_register');
  *
  * @return void
  */
-function faithwork_theme_customize_partial_blogname()
-{
-	bloginfo('name');
+function faithwork_theme_customize_partial_blogname() {
+	bloginfo( 'name' );
 }
 
 /**
@@ -90,16 +91,14 @@ function faithwork_theme_customize_partial_blogname()
  *
  * @return void
  */
-function faithwork_theme_customize_partial_blogdescription()
-{
-	bloginfo('description');
+function faithwork_theme_customize_partial_blogdescription() {
+	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function faithwork_theme_customize_preview_js()
-{
-	wp_enqueue_script('faithwork-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array('customize-preview'), _S_VERSION, true);
+function faithwork_theme_customize_preview_js() {
+	wp_enqueue_script( 'faithwork-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
-add_action('customize_preview_init', 'faithwork_theme_customize_preview_js');
+add_action( 'customize_preview_init', 'faithwork_theme_customize_preview_js' );
