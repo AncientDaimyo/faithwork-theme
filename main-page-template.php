@@ -44,15 +44,17 @@ get_header();
     ?>
 
 
-    <div class="marquee" style="overflow: hidden;">
-        <?php
-        $marquee_text = '1';
-        for ($i = 1; $i <= 10; $i++) {
-        ?>
-            <div class="marquee-content"><?php echo ($marquee_text); ?></div>
-        <?php
-        }
-        ?>
+    <div class="marquee">
+        <div class="marquee-wrapper">
+            <?php
+            $marquee_text = '1';
+            for ($i = 1; $i <= 10; $i++) {
+            ?>
+                <div class="marquee-content"><?php echo ($marquee_text); ?></div>
+            <?php
+            }
+            ?>
+        </div>
     </div>
 
 

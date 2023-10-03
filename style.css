@@ -1604,9 +1604,28 @@ main.main-scroll {
 /*#endregion  */
 
 /*#region MARQUEE  */
-
-
 .marquee {
-	width: 100vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee-wrapper {
+	display: flex;
+}
+
+.marquee-content {
+	white-space: nowrap;
+	flex-shrink: 0;
+	padding: 0 var(--menu-probely);
+	animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+	0%  {
+		transform: translateZ(0);
+	}
+	to {
+		transform: translate3d(-100%, 0, 0);
+	}
 }
 /*#endregion  */
