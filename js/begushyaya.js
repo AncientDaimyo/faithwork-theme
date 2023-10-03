@@ -1,4 +1,4 @@
-jQuery('.marquee').ticker();
+
 
 
   
