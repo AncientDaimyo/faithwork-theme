@@ -33,12 +33,12 @@ function faithwork_theme_customize_register( $wp_customize ) {
 		'settings' => 'test_img',
 	)));
 
-	$wp_customize->add_section('merquee' , array(
-		'title'    => 'Merquee',
+	$wp_customize->add_section('marquee' , array(
+		'title'    => 'Marquee',
 		'priority' => 99,
 	  ));
   
-	  $wp_customize->add_setting('merquee_text', array(
+	  $wp_customize->add_setting('marquee_text', array(
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw',
 		'default' => '',
@@ -46,9 +46,9 @@ function faithwork_theme_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control( 
 		new WP_Customize_Control(
-			$wp_customize, 'merquee_text', array(
-			'label'    => 'merquee text',
-			'section'  => 'merquee',
+			$wp_customize, 'marquee_text', array(
+			'label'    => 'marquee text',
+			'section'  => 'marquee',
 			'type'	   => 'text'
 			)
 		)

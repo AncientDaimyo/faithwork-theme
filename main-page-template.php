@@ -37,7 +37,11 @@ get_header();
 
     // endif;
     ?>
-    <div class="marquee" style="overflow: hidden;">Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки Бабки бабки сука бабки</div>
+
+
+    <div class="marquee" style="overflow: hidden;">
+        <?php get_theme_mod('marque_text')?>
+    </div>
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </main>
 <?php get_footer(); ?>
