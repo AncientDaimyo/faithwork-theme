@@ -11,7 +11,7 @@ get_header();
     <section class="main-block first">
         <!-- <img src="wp-content/themes/faithwork-theme/pic/bg_image.png"> -->
         <video class="video-main-autoplay" loop="loop" preload="auto" autoplay muted>
-            <source src="wp-content/themes/faithwork-theme/Video/IMG_0864.mp4">
+            <source src="wp-content/themes/faithwork-theme/Video/IMG_0852.mp4">
         </video>
     </section>
     <section class="main-block second">
