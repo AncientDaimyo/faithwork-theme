@@ -1583,9 +1583,9 @@ main.main-scroll {
 	height: calc(100vh - var(--logo-width));
 }
 
-.main-block.first img {
+.main-block.first video source{
 	width: 100vw;
-	height: auto;
+	height: 1080px;
 }
 
 .main-block.second {

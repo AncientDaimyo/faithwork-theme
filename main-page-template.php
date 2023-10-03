@@ -9,7 +9,10 @@ get_header();
 
 <main id="primary" class="site-main custom">
     <section class="main-block first">
-        <img src="wp-content/themes/faithwork-theme/pic/bg_image.png">
+        <!-- <img src="wp-content/themes/faithwork-theme/pic/bg_image.png"> -->
+        <video loop="loop" preload="auto" autoplay muted>
+            <source src="wp-content/themes/faithwork-theme/Video/IMG_0852.mp4">
+        </video>
     </section>
     <section class="main-block second">
         <?php echo (get_theme_mod('marque_text')); ?>
