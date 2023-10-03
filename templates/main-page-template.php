@@ -17,7 +17,9 @@ get_header();
     <section class="main-block second">
         <?php echo (get_theme_mod('marque_text')); ?>
     </section>
-    <section class="main-block third"></section>
+    <section class="main-block third">
+        <?php get_template_part('slider');?>
+    </section>
     <?php
     // if ( have_posts() ) :
 
