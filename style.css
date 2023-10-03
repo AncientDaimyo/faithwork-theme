@@ -1607,13 +1607,18 @@ main.main-scroll {
 .marquee {
 	overflow: hidden;
 	position: relative;
+	height: auto;
 }
 
 .marquee-wrapper {
 	display: flex;
+	background-color: lime;
+	height: auto;
 }
 
 .marquee-content {
+	color:white;
+	font-size: 30px;
 	white-space: nowrap;
 	flex-shrink: 0;
 	padding: 0 var(--menu-probely);
