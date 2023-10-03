@@ -1585,7 +1585,7 @@ main.main-scroll {
 
 .main-block.first video source{
 	width: 100vw;
-	height: auto;
+	height: 100vw;
 }
 
 .main-block.second {
