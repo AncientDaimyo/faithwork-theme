@@ -1583,9 +1583,14 @@ main.main-scroll {
 	height: calc(100vh - var(--logo-width));
 }
 
-.main-block.first video source{
+.main-block.first source{
 	width: 100vw;
 	height: 1080px;
+}
+
+.video-main-autoplay {
+	width: 100vw;
+	height: auto;
 }
 
 .main-block.second {
