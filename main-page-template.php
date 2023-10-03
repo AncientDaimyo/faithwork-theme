@@ -42,7 +42,7 @@ get_header();
 
 
     <div class="marquee" style="overflow: hidden;">
-        <?php echo(get_theme_mod('marque_text')) ?>
+        <?php echo('test') ?>
     </div>
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 </main>
