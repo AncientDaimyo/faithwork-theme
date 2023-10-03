@@ -208,3 +208,46 @@ function add_second_logo( $html ) {
     return $html;
 }
 
+/** TESTING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
+
+add_filter( 'woocommerce_checkout_fields', 'wpbl_remove_some_fields', 9999 );
+ 
+function wpbl_remove_some_fields( $array ) {
+
+  	/** Поля которые ОСТАЮТСЯ */
+
+    //unset( $array['billing']['billing_first_name'] ); // Имя
+    //unset( $array['billing']['billing_last_name'] ); // Фамилия
+	//unset( $array['billing']['billing_city'] ); // Населённый пункт
+	//unset( $array['billing']['billing_state'] ); // Область / район
+	//unset( $array['billing']['billing_postcode'] ); // Почтовый индекс
+    //unset( $array['billing']['billing_email'] ); // Email
+    //unset( $array['order']['order_comments'] ); // Примечание к заказу
+
+	/** Поля которые УДАЛЯЮТСЯ */
+ 
+    unset( $array['billing']['billing_phone'] ); // Телефон
+    unset( $array['billing']['billing_company'] ); // Компания
+    unset( $array['billing']['billing_country'] ); // Страна
+    unset( $array['billing']['billing_address_1'] ); // 1-ая строка адреса 
+    unset( $array['billing']['billing_address_2'] ); // 2-ая строка адреса 
+    
+    // Возвращаем обработанный массив
+    return $array;
+}
+
+add_filter( 'woocommerce_checkout_fields', 'wplb_reorder', 9999 );
+ 
+function wplb_reorder( $array ) {
+    
+    // Меняем приоритет
+    $array['billing']['billing_email']['priority'] = 30;
+    $array['billing']['billing_phone']['priority'] = 40;
+    
+    // Назначаем CSS классы
+    $array['billing']['billing_email']['class'][0] = 'form-row-first';
+    $array['billing']['billing_phone']['class'][0] = 'form-row-last';
+    
+    // Возвращаем обработанный массив
+    return $array;
+}
