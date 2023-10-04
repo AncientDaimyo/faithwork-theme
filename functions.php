@@ -147,15 +147,16 @@ function faithwork_theme_scripts() {
 	wp_style_add_data( 'faithwork-theme-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'faithwork-theme-style-slider', get_template_directory_uri() . '/css/slider.css' );
 
+	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'jquery-marquee', 'https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js');
 	wp_enqueue_script( 'faithwork-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'faithwork-theme-swiper', get_template_directory_uri() . '/js/swiper.min.js', array(), 1.0, true );
 	wp_enqueue_script( 'faithwork-theme-burger', get_template_directory_uri() . '/js/burger.js', array(), 1.0, true );
 	wp_enqueue_script( 'faithwork-theme-menu', get_template_directory_uri() . '/js/menu.js', array(), 1.0, true );
 	wp_enqueue_script( 'faithwork-theme-scroll', get_template_directory_uri() . '/js/scroll.js', array(), 1.0, true );
 	wp_enqueue_script( 'faithwork-theme-marquee', get_template_directory_uri() . '/js/begushyaya.js', array(), 1.0, true );
 	wp_enqueue_script( 'faithwork-theme-slider', get_template_directory_uri() . '/js/slider.js', array(), 1.0, true );
-	wp_enqueue_script( 'faithwork-theme-swiper', get_template_directory_uri() . '/js/swiper.js', array(), 1.0, true );
-	wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'jquery-marquee', 'https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js');
+	
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
