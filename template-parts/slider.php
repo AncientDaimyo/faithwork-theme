@@ -3,7 +3,7 @@
 <!-- Slider main container -->
 <div class="swiper">
   <!-- Parallax background element -->
-  <div class="parallax-bg" style="background-image:url(<? get_template_directory_uri() . '/pic/IMG_3602.png'?>)"  data-swiper-parallax="-23%"></div>
+  <div class="parallax-bg" style="background-image:url(<? echo(get_template_directory_uri() . '/pic/IMG_3602.png')?>)"  data-swiper-parallax="-23%"></div>
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
