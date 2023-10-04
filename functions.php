@@ -236,16 +236,16 @@ function wpbl_remove_some_fields($array)
 	//unset( $array['billing']['billing_postcode'] ); // Почтовый индекс
 	//unset( $array['billing']['billing_email'] ); // Email
 	//unset( $array['order']['order_comments'] ); // Примечание к заказу
-
+	// unset($array['billing']['billing_phone']); // Телефон
+	// unset($array['billing']['billing_address_1']); // Адрес (Номер дома и название улицы)
 	/** Поля которые УДАЛЯЮТСЯ */
 
-	unset($array['billing']['billing_phone']); // Телефон
 	unset($array['billing']['billing_company']); // Компания
 	unset($array['billing']['billing_country']); // Страна
-	unset($array['billing']['billing_address_1']); // 1-ая строка адреса 
+	// 1-ая строка адреса 
 	unset($array['billing']['billing_address_2']); // 2-ая строка адреса
 
-	// Удаляю поля пункта "Доставка по другому адресу"
+	// Удаляю поля пункта "Доставка по другому адресу" (Удалил это в админке пунктом "Принудительная доставка по платежному адресу")
 
 	unset($array['shipping']['shipping_first_name']);
 	unset($array['shipping']['shipping_last_name']);
@@ -265,16 +265,15 @@ add_filter('woocommerce_checkout_fields', 'wplb_reorder', 9999);
 
 function wplb_reorder($array)
 {
+	$array['billing']['billing_first_name']['class'][0] = 'form-row-first';
+	$array['billing']['billing_last_name']['class'][0] = 'form-row-last';
+	$array['billing']['billing_address_1']['class'][0] = 'form-row-first';
+	$array['billing']['billing_city']['class'][0] = 'form-row-last';
+	$array['billing']['billing_state']['class'][0] = 'form-row-first';
+	$array['billing']['billing_postcode']['class'][0] = 'form-row-last';
+	$array['billing']['billing_phone']['class'][0] = 'form-row-first';
+	$array['billing']['billing_email']['class'][0] = 'form-row-last';
 
-	// Меняем приоритет
-	$array['billing']['billing_email']['priority'] = 30;
-	$array['billing']['billing_phone']['priority'] = 40;
-
-	// Назначаем CSS классы
-	$array['billing']['billing_email']['class'][0] = 'form-row-first';
-	$array['billing']['billing_phone']['class'][0] = 'form-row-last';
-
-	// Возвращаем обработанный массив
 	return $array;
 }
 
