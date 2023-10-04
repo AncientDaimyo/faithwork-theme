@@ -60,3 +60,7 @@
     height: 22px;
     display: block;
 }
+
+.woocommerce-input-wrapper .input-text {
+    width: 100%;
+}
