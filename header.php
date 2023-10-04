@@ -53,7 +53,7 @@
 				?>
 			</nav><!-- #site-navigation -->
 			<nav class="navigation-icons">
-				<a href="/cart" class="nav-icon">
+				<a href="/search" class="nav-icon">
 					<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
 						<mask id="mask0_7_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="35" height="35">
 							<rect width="35" height="35" fill="white" />
@@ -83,7 +83,7 @@
 						</g>
 					</svg>
 				</a>
-				<a href="#" class="nav-icon">
+				<a href="/cart" class="nav-icon">
 					<svg class="header-svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
 						<mask id="mask0_7_20" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
 							<rect width="30" height="30" fill="white" />
