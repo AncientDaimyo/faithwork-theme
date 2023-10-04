@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main custom">
+<main id="primary" class="site-main custom" >
     <section class="main-block first">
         <!-- <img src="wp-content/themes/faithwork-theme/pic/bg_image.png"> -->
         <video class="video-main-autoplay" loop="loop" preload="auto" autoplay muted>
