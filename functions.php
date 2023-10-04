@@ -243,7 +243,19 @@ function wpbl_remove_some_fields($array)
 	unset($array['billing']['billing_company']); // Компания
 	unset($array['billing']['billing_country']); // Страна
 	unset($array['billing']['billing_address_1']); // 1-ая строка адреса 
-	unset($array['billing']['billing_address_2']); // 2-ая строка адреса 
+	unset($array['billing']['billing_address_2']); // 2-ая строка адреса
+
+	// Удаляю поля пункта "Доставка по другому адресу"
+
+	unset($array['shipping']['shipping_first_name']);
+	unset($array['shipping']['shipping_last_name']);
+	unset($array['shipping']['shipping_company']);
+	unset($array['shipping']['shipping_country']);
+	unset($array['shipping']['shipping_address_1']);
+	unset($array['shipping']['shipping_address_2']);
+	unset($array['shipping']['shipping_city']);
+	unset($array['shipping']['shipping_state']);
+	unset($array['shipping']['shipping_postcode']);
 
 	// Возвращаем обработанный массив
 	return $array;
