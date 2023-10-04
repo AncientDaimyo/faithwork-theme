@@ -1,6 +1,24 @@
-jQuery('.slider').slick({
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	autoplay: true,
-	autoplaySpeed: 2000,
-});
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	direction: 'vertical',
+	loop: true,
+	parallax: true,
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+	// And if we need scrollbar
+	scrollbar: {
+	  el: '.swiper-scrollbar',
+	},
+	autoplay: {
+		delay: 5000,
+	},
+  });

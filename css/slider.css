@@ -2,27 +2,3 @@
 	width: 100vw;
 	height: calc(100vh - var(--logo-width));
 }
-
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background-color: aliceblue;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.swiper-slide img {
-	width: 58%;
-	object-fit: cover;
-}
-
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-	position: relative;
-}
-
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
-	position: relative;
-}

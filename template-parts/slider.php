@@ -1,14 +1,59 @@
-<title>My Now Amazing Webpage</title>
-<link rel="stylesheet" type="text/css" href="<? get_template_directory_uri() . 'js/slick/slick.css'?>" />
-<link rel="stylesheet" type="text/css" href="<? get_template_directory_uri() . 'js/slick/slick-theme.css'?>" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-
-<div class="slider">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Parallax background element -->
+  <div class="parallax-bg" style="background-image:url(<? get_template_directory_uri() . '/pic/IMG_3602.png' ?>)" data-swiper-parallax="-23%"></div>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <!-- Each slide has parallax title -->
+      <div class="title" data-swiper-parallax="-100">Slide 1</div>
+      <!-- Parallax subtitle -->
+      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <!-- And parallax text with custom transition duration -->
+      <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+        <p>Lorem ipsum dolor sit amet, ...</p>
+      </div>
+      <!-- Opacity parallax -->
+      <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+      <!-- Scale parallax -->
+      <div data-swiper-parallax-scale="0.15">I will change scale</div>
+    </div>
+    <div class="swiper-slide">
+      <!-- Each slide has parallax title -->
+      <div class="title" data-swiper-parallax="-100">Slide 1</div>
+      <!-- Parallax subtitle -->
+      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <!-- And parallax text with custom transition duration -->
+      <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+        <p>Lorem ipsum dolor sit amet, ...</p>
+      </div>
+      <!-- Opacity parallax -->
+      <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+      <!-- Scale parallax -->
+      <div data-swiper-parallax-scale="0.15">I will change scale</div>
+    </div>
+    <div class="swiper-slide">
+      <!-- Each slide has parallax title -->
+      <div class="title" data-swiper-parallax="-100">Slide 1</div>
+      <!-- Parallax subtitle -->
+      <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+      <!-- And parallax text with custom transition duration -->
+      <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+        <p>Lorem ipsum dolor sit amet, ...</p>
+      </div>
+      <!-- Opacity parallax -->
+      <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+      <!-- Scale parallax -->
+      <div data-swiper-parallax-scale="0.15">I will change scale</div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="<? get_template_directory_uri() . 'js/slick/slick.min.js'?>"></script>
