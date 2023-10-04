@@ -1599,6 +1599,10 @@ main.main-scroll {
 
 .main-block.third {
 	background-color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /*#endregion  */
