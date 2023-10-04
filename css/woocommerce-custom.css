@@ -45,4 +45,5 @@
     margin-left: var(--menu-spacing);
     width: 50vw;
     padding-right: 8.14vw;
+    flex-flow: row wrap;
 }
