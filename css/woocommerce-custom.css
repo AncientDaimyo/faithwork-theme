@@ -91,3 +91,7 @@
 #customer_details .col-2 {
     width: 100%;
 }
+
+.woocommerce-privacy-policy-text {
+    display: none;
+}
