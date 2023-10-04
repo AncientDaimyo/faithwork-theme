@@ -277,7 +277,7 @@ function wplb_reorder($array)
 	return $array;
 }
 
-add_filter('woocommerce_checkout_fields', 'wpbl_show_fields');
+// add_filter('woocommerce_checkout_fields', 'wpbl_show_fields');
 
 // function wpbl_show_fields($array)
 // {
