@@ -57,4 +57,6 @@
 #billing_phone_field .woocommerce-input-wrapper,
 #billing_email_field .woocommerce-input-wrapper {
     width: calc((50vw - var(--menu-spacing) - 8.14vw) / 2);
+    height: 22px;
+    display: block;
 }
