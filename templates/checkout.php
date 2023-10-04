@@ -12,7 +12,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
-		get_template_part( 'template-parts/content', 'page' );
+		get_template_part( 'template-parts/custom-content');
 		?>
 
 	</main><!-- #main -->
