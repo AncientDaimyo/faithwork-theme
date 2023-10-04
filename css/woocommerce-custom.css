@@ -44,7 +44,7 @@
     display: flex;
     padding-left: calc(var(--menu-spacing) - 22px);
     width: 50vw;
-    padding-right: 8.14vw;
+    padding-right: var(--menu-probely);
     flex-flow: row wrap;
 }
 
@@ -56,10 +56,10 @@
 #billing_postcode_field .woocommerce-input-wrapper,
 #billing_phone_field .woocommerce-input-wrapper,
 #billing_email_field .woocommerce-input-wrapper {
-    width: calc((50vw - var(--menu-spacing) - 8.14vw) / 2);
+    width: calc((50vw - var(--menu-spacing) - (var(--menu-probely) * 2)) / 2);
     height: 44px;
     display: block;
-    margin-left: 22px;
+    margin-left: var(--menu-probely);
 }
 
 .woocommerce-input-wrapper .input-text {
