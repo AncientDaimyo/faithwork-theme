@@ -14,7 +14,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
-    <script>window.removeEventListener('scroll')</script>
+    <script>window.removeEventListener('scroll', headerScroll)</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -23,7 +23,7 @@
 
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'faithwork-theme'); ?></a>
 
-		<header id="masthead" class="site-header">
+		<header id="masthead" class="site-header site-header-second">
 			<?php
 			the_custom_logo();
 			if (is_front_page() && is_home()) :

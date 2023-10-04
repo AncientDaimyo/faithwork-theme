@@ -1193,6 +1193,11 @@ textarea {
 	transition: 0.3s;
 }
 
+.site-header-second {
+	position: relative !important;
+	background-color: #000000;
+}
+
 .faithwork-logo {
 	height: var(--logo-width) !important;
 	width: var(--logo-width) !important;
