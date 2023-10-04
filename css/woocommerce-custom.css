@@ -42,7 +42,7 @@
 
 .woocommerce-billing-fields__field-wrapper {
     display: flex;
-    padding-left: var(--menu-spacing);
+    padding-left: calc(var(--menu-spacing) - 22px);
     width: 50vw;
     padding-right: 8.14vw;
     flex-flow: row wrap;
@@ -57,8 +57,9 @@
 #billing_phone_field .woocommerce-input-wrapper,
 #billing_email_field .woocommerce-input-wrapper {
     width: calc((50vw - var(--menu-spacing) - 8.14vw) / 2);
-    height: 22px;
+    height: 44px;
     display: block;
+    margin-left: 22px;
 }
 
 .woocommerce-input-wrapper .input-text {
