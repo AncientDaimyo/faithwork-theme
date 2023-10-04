@@ -42,8 +42,19 @@
 
 .woocommerce-billing-fields__field-wrapper {
     display: flex;
-    margin-left: var(--menu-spacing);
+    padding-left: var(--menu-spacing);
     width: 50vw;
     padding-right: 8.14vw;
     flex-flow: row wrap;
+}
+
+#billing_first_name_field .woocommerce-input-wrapper,
+#billing_last_name_field .woocommerce-input-wrapper,
+#billing_address_1_field .woocommerce-input-wrapper,
+#billing_city_field .woocommerce-input-wrapper,
+#billing_state_field .woocommerce-input-wrapper,
+#billing_postcode_field .woocommerce-input-wrapper,
+#billing_phone_field .woocommerce-input-wrapper,
+#billing_email_field .woocommerce-input-wrapper {
+    width: calc((50vw - var(--menu-spacing) - 8.14vw) / 2);
 }
