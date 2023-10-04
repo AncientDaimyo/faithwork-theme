@@ -20,7 +20,7 @@ get_header("second");
 		woocommerce_breadcrumb($args);
 		?>
 	</div>
-
+<!-- 
 	<div class="delivery-details">
 		<span class="woocommerce-input-wrapper">
 			<input type="text" class="input-text" name="billing_first_name" id="billing_first_name" placeholder="Имя" value="" autocomplete="given-name">
@@ -46,7 +46,7 @@ get_header("second");
 		<span class="woocommerce-input-wrapper">
 			<input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="Email" value="" autocomplete="email">
 		</span>
-	</div>
+	</div> -->
 
 
 
