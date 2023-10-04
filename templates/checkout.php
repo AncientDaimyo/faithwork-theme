@@ -21,6 +21,28 @@ get_header("second");
 		?>
 	</div>
 
+	<div class="delivery-details">
+		<span class="woocommerce-input-wrapper">
+			<input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="Имя" value="" autocomplete="family-name">
+		</span>
+
+		<span class="woocommerce-input-wrapper">
+
+		</span>
+
+		<span class="woocommerce-input-wrapper">
+
+		</span>
+
+		<span class="woocommerce-input-wrapper">
+
+		</span>
+
+		<span class="woocommerce-input-wrapper">
+
+		</span>
+	</div>
+
 
 
 	<?php
