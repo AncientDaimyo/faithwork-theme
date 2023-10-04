@@ -1,12 +1,6 @@
-var swiper = new Swiper(".mySwiper", {
-	spaceBetween: 0,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	pagination: {
-		el: ".swiper-pagination",
-	},
-	mousewheel: false,
-	keyboard: true,
+jQuery('.slider').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 2000,
 });
