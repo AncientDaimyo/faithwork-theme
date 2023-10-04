@@ -79,7 +79,15 @@
     align-items: center;
 }
 
+.woocommerce-additional-fields__field-wrapper {
+    margin-left: var(--menu-spacing);
+}
+
 #order_comments {
     width: calc((50vw - var(--menu-spacing) - var(--menu-probely)));
     height: 44px;
+}
+
+#customer_details .col-2 {
+    width: 100%;
 }
