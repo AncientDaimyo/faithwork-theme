@@ -16,3 +16,5 @@ const swiper = new Swiper('.swiper', {
 		disableOnInteraction: false
 	}
 });
+
+document.querySelector('.swiper').swiper;
