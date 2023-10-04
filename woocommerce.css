@@ -246,7 +246,7 @@ ul.products li.product .button {
 
 	.col2-set .form-row-first {
 		float: left;
-		margin-right: 3.8%;
+		margin-right: 2.37vw;
 	}
 
 	.col2-set .form-row-last {
@@ -256,7 +256,7 @@ ul.products li.product .button {
 
 	.col2-set .form-row-first,
 	.col2-set .form-row-last {
-		width: 48.1%;
+		width: 39.35vw;
 	}
 }
 
