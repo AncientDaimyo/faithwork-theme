@@ -1,6 +1,6 @@
 .breadcrumb {
     display: flex;
-    margin-top: calc(var(--logo-width) + 22px);
+    margin-top: 22px;
     margin-left: var(--menu-spacing);
 }
 
