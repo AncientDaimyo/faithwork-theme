@@ -1,4 +1,11 @@
 <?php
+/**
+ * @package faithwork-theme
+ *
+*/
+/*
+Template Name: checkout
+*/
 get_header();
 ?>
 
