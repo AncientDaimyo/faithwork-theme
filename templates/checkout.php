@@ -7,7 +7,7 @@
 /*
 Template Name: checkout
 */
-get_header();
+get_header("second");
 ?>
 
 <main id="primary" class="site-main">
