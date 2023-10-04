@@ -12,3 +12,30 @@
 .delivery-details {
     margin-left: var(--menu-spacing);
 }
+
+.woocommerce-notices-wrapper {
+    display: none;
+}
+
+.woocommerce-form-coupon-toggle {
+    display: none;
+}
+
+.checkout_coupon {
+    display:none
+}
+
+.checkou.woocommerce-checkout {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#order_review_heading {
+    display: none;
+}
+
+.woocommerce-billing-fields h3 {
+    display: none;
+}
