@@ -9,11 +9,15 @@ Template Name: checkout
 get_header();
 ?>
 
-<main id="primary" class="site-main">
+	<main id="primary" class="site-main">
 
-    ХУЙ
+		<?php
+		while ( have_posts() ) :
+			the_post();
+		endwhile; // End of the loop.
+		?>
 
-</main><!-- #main -->
+	</main><!-- #main -->
 
 <?php
 get_footer("second");
