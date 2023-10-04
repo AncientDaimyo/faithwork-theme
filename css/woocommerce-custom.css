@@ -3,3 +3,8 @@
     margin-top: calc(var(--logo-width) + 22px);
     margin-left: var(--menu-spacing);
 }
+
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+}
