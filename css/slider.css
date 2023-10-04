@@ -2,3 +2,8 @@
 	width: 100vw;
 	height: calc(100vh - var(--logo-width));
 }
+
+.parallax-bg {
+	height: calc(100vh - var(--logo-width));
+	width: 100vw;
+}
