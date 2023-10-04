@@ -6,4 +6,5 @@
 .parallax-bg {
 	height: calc(100vh - var(--logo-width));
 	width: 100vw;
+	z-index: 0;
 }
