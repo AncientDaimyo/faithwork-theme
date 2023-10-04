@@ -15,7 +15,7 @@ get_header();
 	<div class="breadcrumb">
 		<?php
 		$args = array(
-			'delimiter' => 'к' // меняем разделитель
+			'delimiter' => '&nbsp;&#47;&nbsp;', // меняем разделитель
 		);
 		woocommerce_breadcrumb($args);
 		?>
