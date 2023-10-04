@@ -12,13 +12,18 @@ get_header();
 
 <main id="primary" class="site-main">
 
+	<div class="breadcrumb">
+		<?php
+		$args = array(
+			'delimiter' => 'к' // меняем разделитель
+		);
+		woocommerce_breadcrumb($args);
+		?>
+	</div>
+
+
+
 	<?php
-
-	$args = array(
-		'delimiter' => '→' // меняем разделитель
-	);
-	woocommerce_breadcrumb($args);
-
 	get_template_part('template-parts/custom-content');
 	?>
 
