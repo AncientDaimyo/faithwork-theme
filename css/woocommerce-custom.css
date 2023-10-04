@@ -39,3 +39,8 @@
 .woocommerce-billing-fields h3 {
     display: none;
 }
+
+.woocommerce-billing-fields__field-wrapper {
+    display: flex;
+    margin-left: var(--menu-spacing);
+}
