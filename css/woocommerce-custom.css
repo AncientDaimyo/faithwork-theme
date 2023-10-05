@@ -95,3 +95,8 @@
 .woocommerce-privacy-policy-text {
     display: none;
 }
+
+#place_order {
+    background-color: blue;
+    
+}
