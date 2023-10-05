@@ -277,6 +277,12 @@ function wplb_reorder($array)
 	return $array;
 }
 
+add_action('woocommerce_checkout_before_customer_details', 'tb_checkout_header');
+function tb_checkout_header()
+{
+	echo "<h1>Детали доставки<h1>";
+}
+
 // add_filter('woocommerce_checkout_fields', 'wpbl_show_fields');
 
 // function wpbl_show_fields($array)
