@@ -148,3 +148,11 @@ input[type=text]:-moz-placeholder {
 input[type=text] {
     padding-left: 22px;
 }
+
+input[type=tel] {
+    padding-left: 22px;
+}
+
+input[type=email] {
+    padding-left: 22px;
+}
