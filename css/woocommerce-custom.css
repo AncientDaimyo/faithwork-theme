@@ -114,25 +114,25 @@
 }
 
 input[type=text]::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.705);
+    color: #a9a9a9;
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
 }
 
 input[type=text]:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.705);
+    color: #a9a9a9;
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
 }
 
 input[type=text]::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.705);
+    color: #a9a9a9;
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
 }
 
 input[type=text]:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.705);
+    color: #a9a9a9;
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
 }
