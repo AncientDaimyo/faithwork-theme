@@ -235,6 +235,7 @@ tr.cart_item {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
 }
 
 td.product-name {
