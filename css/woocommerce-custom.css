@@ -204,6 +204,10 @@ textarea::placeholder {
     font-weight: 600;
 }
 
+textarea {
+    padding-left: 22px;
+}
+
 input[type=text] {
     padding-left: 22px;
 }
