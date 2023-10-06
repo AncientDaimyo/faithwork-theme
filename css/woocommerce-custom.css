@@ -137,6 +137,54 @@ input[type=text]:-moz-placeholder {
     font-weight: 600;
 }
 
+input[type=tel]::-webkit-input-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=tel]:-ms-input-placeholder  {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=tel]::-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=tel]:-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=email]::-webkit-input-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=email]:-ms-input-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=email]::-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=email]:-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
 input[type=text] {
     padding-left: 22px;
 }
