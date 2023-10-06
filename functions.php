@@ -297,9 +297,57 @@ function wpsh_display_attributes($should_include_attributes, $product)
 	return false;
 }
 
-add_filter('woocommerce_checkout_cart_item_quantity', 'change_checkout_quantity');
-function change_checkout_quantity($html)
+add_filter('woocommerce_checkout_cart_item_quantity', '__return_empty_string');
+add_filter('woocommerce_cart_item_subtotal', 'bbloomer_checkout_item_quantity_input', 9999, 3);
+
+
+function bbloomer_checkout_item_quantity_input($product_quantity, $cart_item, $cart_item_key)
 {
-	$html = str_replace('<strong class="product-quantity">&#215"', '<strong class="product-quantity">Количество', $html);
-	return $html;
+
+	if (is_checkout()) {
+
+		$product = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
+
+		$product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
+
+		$product_quantity = woocommerce_quantity_input(array(
+
+			'input_name'  => 'shipping_method_qty_' . $product_id,
+
+			'input_value' => $cart_item['quantity'],
+
+			'max_value'   => $product->get_max_purchase_quantity(),
+
+			'min_value'   => '0',
+
+		), $product, false);
+
+		$product_quantity .= '<input type="hidden" name="product_key_' . $product_id . '" value="' . $cart_item_key . '">';
+	}
+
+	return $product_quantity;
+}
+
+add_action('woocommerce_checkout_update_order_review', 'bbloomer_update_item_quantity_checkout');
+
+function bbloomer_update_item_quantity_checkout($post_data)
+{
+
+	parse_str($post_data, $post_data_array);
+
+	$updated_qty = false;
+
+	foreach ($post_data_array as $key => $value) {
+
+		if (substr($key, 0, 20) === 'shipping_method_qty_') {
+
+			$id = substr($key, 20);
+
+			WC()->cart->set_quantity($post_data_array['product_key_' . $id], $post_data_array[$key], false);
+
+			$updated_qty = true;
+		}
+	}
+
+	if ($updated_qty) WC()->cart->calculate_totals();
 }
