@@ -22,7 +22,7 @@
 }
 
 .checkout_coupon {
-    display:none
+    display: none
 }
 
 .checkout.woocommerce-checkout {
@@ -111,4 +111,12 @@
 
 .woocommerce-form-login-toggle {
     display: none;
+}
+
+.woocommerce-input-wrapper .input-text::-webkit-input-placeholder,
+.woocommerce-input-wrapper .input-text:-ms-input-placeholder,
+.woocommerce-input-wrapper .input-text::-moz-placeholder,
+.woocommerce-input-wrapper .input-text:-moz-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
 }
