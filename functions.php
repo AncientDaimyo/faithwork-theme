@@ -277,24 +277,13 @@ function wplb_reorder($array)
 	return $array;
 }
 
-// add_action('woocommerce_checkout_before_customer_details', 'tb_checkout_header');
-// function tb_checkout_header()
-// {
-// 	echo "<h1>Детали доставки<h1>";
-// }
-
-// add_filter('woocommerce_checkout_fields', 'wpbl_show_fields');
-
-// function wpbl_show_fields($array)
-// {
-
-// 	// Выводим список полей, но только если пользователь имеет права админа
-// 	if (current_user_can('manage_options')) {
-
-// 		echo '<pre>';
-// 		print_r($array);
-// 		echo '</pre>';
-// 	}
-
-// 	return $array;
-// }
+add_filter('woocommerce_cart_item_name', 'quadlayers_product_image_checkout', 9999, 3);
+function quadlayers_product_image_checkout($name, $cart_item, $cart_item_key)
+{
+	if (!is_checkout()) {
+		return $name;
+	}
+	$product = $cart_item['data'];
+	$thumbnail = $product->get_image(array('50', '50'), array('class' => 'alignleft'));
+	return $thumbnail . $name;
+}
