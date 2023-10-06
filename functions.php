@@ -322,7 +322,7 @@ function bbloomer_checkout_item_quantity_input($product_quantity, $cart_item, $c
 
 		), $product, false);
 
-		$product_quantity .= '<input type="hidden" name="product_key_' . $product_id . '" value="' . $cart_item_key . '">';
+		$product_quantity .= '<p>Количество</p><input type="hidden" name="product_key_' . $product_id . '" value="' . $cart_item_key . '">';
 	}
 
 	return $product_quantity;
