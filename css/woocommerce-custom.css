@@ -108,3 +108,7 @@
 .woocommerce-account-fields {
     display: none;
 }
+
+.woocommerce-form-login-toggle {
+    display: none;
+}
