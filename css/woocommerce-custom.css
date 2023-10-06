@@ -245,3 +245,9 @@ td.product-name {
     width: 100%;
     height: auto;
 }
+
+td.product-total {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
