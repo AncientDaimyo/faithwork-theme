@@ -284,6 +284,6 @@ function quadlayers_product_image_checkout($name, $cart_item, $cart_item_key)
 		return $name;
 	}
 	$product = $cart_item['data'];
-	$thumbnail = $product->get_image(array('195', '195'), array('class' => 'alignleft'));
+	$thumbnail = $product->get_image(array('195', '160'), array('class' => 'alignleft'));
 	return $thumbnail . $name;
 }
