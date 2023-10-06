@@ -220,9 +220,8 @@ input[type=email] {
     padding-left: 22px;
 }
 
-.product-name img {
-    font-size: 54px;
-
+.futbolka-name {
+    font-size: 27px;
 }
 
 .woocommerce-Price-amount bdi {
