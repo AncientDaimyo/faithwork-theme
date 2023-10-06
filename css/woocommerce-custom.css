@@ -113,10 +113,12 @@
     display: none;
 }
 
-.woocommerce-input-wrapper .input-text::-webkit-input-placeholder,
+.woocommerce-input-wrapper input[type=text]::-webkit-input-placeholder,
 .woocommerce-input-wrapper .input-text:-ms-input-placeholder,
 .woocommerce-input-wrapper .input-text::-moz-placeholder,
 .woocommerce-input-wrapper .input-text:-moz-placeholder {
     color: #f00;
     font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
