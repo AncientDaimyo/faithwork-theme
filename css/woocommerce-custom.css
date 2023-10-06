@@ -148,3 +148,12 @@ input[type=tel] {
 input[type=email] {
     padding-left: 22px;
 }
+
+.product-name img {
+    font-size: 27px;
+
+}
+
+woocommerce-Price-amount bdi {
+    font-size: 27px;
+}
