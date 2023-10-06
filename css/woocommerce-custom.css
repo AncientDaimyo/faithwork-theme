@@ -140,3 +140,59 @@ input[type=text]:-moz-placeholder {
     font-weight: 600;
     font-style: italic;
 }
+
+input[type=tel]::-webkit-input-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=tel]:-ms-input-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=tel]::-moz-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=tel]:-moz-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=email]::-webkit-input-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=email]:-ms-input-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=email]::-moz-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=email]:-moz-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
