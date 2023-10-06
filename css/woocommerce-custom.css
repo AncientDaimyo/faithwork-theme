@@ -232,7 +232,7 @@ th.product-total {
 
 tr.cart_item {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
