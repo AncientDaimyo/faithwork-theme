@@ -296,3 +296,5 @@ function wpsh_display_attributes($should_include_attributes, $product)
 	}
 	return false;
 }
+
+add_filter( 'woocommerce_checkout_cart_item_quantity', '__return_empty_string' );
