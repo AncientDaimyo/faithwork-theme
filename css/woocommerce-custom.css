@@ -144,7 +144,3 @@ input[type=text]:-moz-placeholder {
     font-style: italic;
     margin-left: 22px;
 }
-
-input[type=text] {
-    padding-left: 11px;
-}
