@@ -235,7 +235,7 @@ tr.cart_item {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
+    width: calc((50vw - var(--menu-spacing) - var(--menu-probely)));
     height: auto;
 }
 
