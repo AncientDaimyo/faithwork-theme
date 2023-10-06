@@ -206,3 +206,7 @@ input[type=email] {
 textarea {
     padding-left: 22px;
 }
+
+th.product-name {
+    display: none;
+}
