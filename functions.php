@@ -287,3 +287,12 @@ function quadlayers_product_image_checkout($name, $cart_item, $cart_item_key)
 	$thumbnail = $product->get_image(array('195', '160'), array('class' => 'alignleft'));
 	return $thumbnail . $name;
 }
+
+add_filter('woocommerce_product_variation_title_include_attributes', 'wpsh_display_attributes', 10, 2);
+function wpsh_display_attributes($should_include_attributes, $product)
+{
+	if (is_account_page()) {
+		return $should_include_attributes;
+	}
+	return false;
+}
