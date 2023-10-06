@@ -237,6 +237,7 @@ tr.cart_item {
     align-items: flex-start;
     width: 50vw;
     height: auto;
+    position: relative;
 }
 
 td.product-name {
