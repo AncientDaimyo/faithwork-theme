@@ -114,35 +114,27 @@
 }
 
 input[type=text]::-webkit-input-placeholder {
-    color: #f00;
+    color: rgba(255, 255, 255, 0.705);
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
-    font-style: italic;
-    margin-left: 22px;
 }
 
 input[type=text]:-ms-input-placeholder {
-    color: #f00;
+    color: rgba(255, 255, 255, 0.705);
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
-    font-style: italic;
-    margin-left: 22px;
 }
 
 input[type=text]::-moz-placeholder {
-    color: #f00;
+    color: rgba(255, 255, 255, 0.705);
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
-    font-style: italic;
-    margin-left: 22px;
 }
 
 input[type=text]:-moz-placeholder {
-    color: #f00;
+    color: rgba(255, 255, 255, 0.705);
     font-family: "HumanSans", sans-serif;
     font-weight: 600;
-    font-style: italic;
-    margin-left: 22px;
 }
 
 input[type=text] {
