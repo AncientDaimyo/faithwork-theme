@@ -207,6 +207,6 @@ textarea {
     padding-left: 22px;
 }
 
-th.product-name {
+th.product-name, th.product-total{
     display: none;
 }
