@@ -277,6 +277,8 @@ function wplb_reorder($array)
 	return $array;
 }
 
+// добавляем фотку товара на страницу оформления заказа
+
 add_filter('woocommerce_cart_item_name', 'quadlayers_product_image_checkout', 9999, 3);
 function quadlayers_product_image_checkout($name, $cart_item, $cart_item_key)
 {
@@ -285,7 +287,7 @@ function quadlayers_product_image_checkout($name, $cart_item, $cart_item_key)
 	}
 	$product = $cart_item['data'];
 	$thumbnail = $product->get_image(array('195', '160'), array('class' => 'alignleft'));
-	return $thumbnail . $name;
+	return $thumbnail . '<p class="futbolka-name">' . $name . '</p>';
 }
 
 add_filter('woocommerce_product_variation_title_include_attributes', 'wpsh_display_attributes', 10, 2);
