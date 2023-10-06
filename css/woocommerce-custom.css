@@ -100,3 +100,11 @@
     background-color: blue;
     color: white;
 }
+
+.woocommeerce-info {
+    display: none;
+}
+
+.woocommerce-account-fields {
+    display: none;
+}
