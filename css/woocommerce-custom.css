@@ -208,6 +208,12 @@ input[type=email] {
 
 }
 
-woocommerce-Price-amount bdi {
+.woocommerce-Price-amount bdi {
     font-size: 27px;
 }
+
+th.product-name,
+th.product-total {
+    display: none;
+}
+
