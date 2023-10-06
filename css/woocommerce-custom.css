@@ -71,8 +71,8 @@
 #billing_postcode_field,
 #billing_phone_field, 
 #billing_email_field {
-    margin-top: 22px;
-    margin-bottom: 22px;
+    margin-top: 11px;
+    margin-bottom: 11px;
 }
 
 .woocommerce-input-wrapper .input-text {
