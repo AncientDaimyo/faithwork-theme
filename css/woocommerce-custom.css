@@ -113,9 +113,27 @@
     display: none;
 }
 
-input[type=text]::-webkit-input-placeholder,
-input[type=text]:-ms-input-placeholder,
-input[type=text]::-moz-placeholder,
+input[type=text]::-webkit-input-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=text]:-ms-input-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=text]::-moz-placeholder {
+    color: #f00;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
 input[type=text]:-moz-placeholder {
     color: #f00;
     font-family: "HumanSans", sans-serif;
