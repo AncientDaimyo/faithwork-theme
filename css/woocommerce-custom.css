@@ -239,6 +239,8 @@ tr.cart_item {
 }
 
 td.product-name {
+    display: flex;
+    align-items: flex-start;
     width: 100%;
     height: auto;
 }
