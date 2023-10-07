@@ -272,5 +272,7 @@ dl.variation {
 
 dd.variation p {
     margin: 0 !important;
-    display: flex;
+    position: absolute;
+    left: 252px;
+    top: 55px;
 }
