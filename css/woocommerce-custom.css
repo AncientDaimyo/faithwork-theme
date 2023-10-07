@@ -223,6 +223,7 @@ input[type=email] {
 
 .futbolka-name {
     font-size: 27px;
+    margin: 0;
 }
 
 .woocommerce-Price-amount bdi {
