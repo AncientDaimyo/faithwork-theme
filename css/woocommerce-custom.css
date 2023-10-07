@@ -206,6 +206,7 @@ textarea::placeholder {
 
 textarea {
     padding-left: 22px;
+    padding-top: 22px;
 }
 
 input[type=text] {
