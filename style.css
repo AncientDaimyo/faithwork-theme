@@ -467,7 +467,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+	margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers. */
