@@ -258,3 +258,9 @@ td.product-total {
     left: 200.5px;
 
 }
+
+dl.variation {
+    position: absolute;
+    left: 184px;
+    top: 55px;
+}
