@@ -270,6 +270,6 @@ dl.variation {
     flex-flow: row nowrap;
 }
 
-dd.variation p {
+dl.variation dd.variation p {
     margin: 0;
 }
