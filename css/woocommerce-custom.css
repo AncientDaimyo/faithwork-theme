@@ -263,4 +263,9 @@ dl.variation {
     position: absolute;
     left: 184px;
     top: 55px;
+    margin: 0;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
 }
