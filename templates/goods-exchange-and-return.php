@@ -5,6 +5,7 @@
  *
  */
 /*
+Template Name: goods-exchange-and-return
 */
 get_header("second");
 ?>
