@@ -7,15 +7,9 @@
 }
 
 .entry-content {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     margin-left: calc(var(--menu-spacing));
 }
 
 .entry-content p {
     margin-top: 11px;
-    display: flex;
-    flex-flow: column nowrap;
 }
