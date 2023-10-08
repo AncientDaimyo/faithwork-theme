@@ -248,7 +248,6 @@ tr.cart_item {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50vw;
     height: auto;
     position: relative;
 }
@@ -256,7 +255,6 @@ tr.cart_item {
 td.product-name {
     display: flex;
     align-items: flex-start;
-    width: 100%;
     height: auto;
 }
 
