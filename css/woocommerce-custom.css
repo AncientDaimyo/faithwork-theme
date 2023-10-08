@@ -279,7 +279,6 @@ dl.variation {
 }
 
 tfoot {
-    width: 50vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -289,7 +288,6 @@ tfoot {
 tr.cart-subtotal,
 tr.woocommerce-shipping-totals,
 tr.order-total {
-    width: 100%;
     height: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -298,11 +296,9 @@ tr.order-total {
 }
 
 #oreder_review {
-    width: 100%;
 }
 
 #payment {
-    width: 100%;
 }
 
 #payment ul {
