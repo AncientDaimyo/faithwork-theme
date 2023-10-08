@@ -100,6 +100,8 @@
 }
 /* #endregion */
 
+/* #region terms-of-use */
+
 .terms-of-use-heading {
     margin-left: var(--menu-spacing);
     width: 50%;
@@ -139,6 +141,36 @@
     width: auto;
 }
 
+/* #endregion */
+
+.size-guide-heading {
+    margin-left: var(--menu-spacing);
+    width: 50%;
+}
+
+.size-guide-heading h1 {
+    font-size: 64px;
+    margin-top: 44px;
+    margin-bottom: 0;
+    padding-bottom: 11px;
+}
+
+.size-guide-article {
+    font-family: "Human Sans", sans-serif;
+    font-weight: 400;
+}
+
+.size-guide-article p {
+    font-size: 24px;
+    padding-top: 11px;
+}
+
+.size-guide-picture img {
+    padding-top: 140px;
+    padding-left: 88px;
+    height: 640px;
+    width: auto;
+}
 
  /* #region delivery */
 .delivery-info {
