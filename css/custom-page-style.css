@@ -1,4 +1,5 @@
 #primary.checkout-main {
     min-height: calc(100vh - 155px - var(--logo-width));
     padding-top: 22px;
+    position: relative;
 }
