@@ -807,7 +807,7 @@ textarea {
 
 /*#region Navigation*/
 .main-navigation {
-	padding-left: var(--menu-spacing);
+	left: var(--menu-spacing);
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
