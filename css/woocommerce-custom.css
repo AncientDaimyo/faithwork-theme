@@ -295,3 +295,12 @@ tr.order-total {
 #payment {
     width: 100%;
 }
+
+#payment ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#payment ul li {
+    list-style-type: none;
+}
