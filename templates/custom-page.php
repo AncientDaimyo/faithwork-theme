@@ -6,7 +6,7 @@
 /*
 Template Name: custom
 */
-get_header();
+get_header("second");
 ?>
 
 <main id="primary" class="site-main">
