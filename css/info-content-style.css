@@ -8,7 +8,7 @@
 
 .entry-content {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: calc(var(--menu-spacing));
