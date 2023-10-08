@@ -36,6 +36,10 @@
     position: relative;
 }
 
+.shop_table {
+    width: 50vw;
+}
+
 #order_review_heading {
     display: none;
 }
