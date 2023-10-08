@@ -812,7 +812,6 @@ textarea {
 	flex-flow: row nowrap;
 	justify-content: flex-start;
 	align-items: center;
-	width: 100%;
 	position: absolute;
 	top: 0;
 }
