@@ -11,7 +11,7 @@ get_header("second");
 ?>
 
 <main id="primary" class="site-main">
-    <div class='info-content-page'>
+    <div class="info-content-page">
         <?php
         while (have_posts()) :
             the_post();
