@@ -12,7 +12,7 @@ get_header("second");
 
 <main id="primary" class="site-main">
     <div class="info-content-page">
-        <p>СУКА ПИЗДА ТРЮФЕЛЯ</p>
+        <p>Хуй пизда трюфелЯ</p>
     </div>
 </main><!-- #main -->
 
