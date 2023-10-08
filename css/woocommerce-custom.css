@@ -33,6 +33,7 @@
 
 #order_review {
     width: 50vw;
+    position: relative;
 }
 
 #order_review_heading {
