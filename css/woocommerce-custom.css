@@ -270,9 +270,21 @@ dl.variation {
     flex-flow: row nowrap;
 }
 
-/* dd.variation p {
-    margin: 0 !important;
-    position: absolute;
-    left: 252px;
-    top: 55px;
-} */
+tfoot {
+    width: 50vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+tr.cart-subtotal,
+tr.woocommerce-shipping-totals,
+tr.order-total {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}

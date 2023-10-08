@@ -10,7 +10,7 @@ Template Name: checkout
 get_header("second");
 ?>
 
-<main id="primary" class="site-main">
+<main id="primary" class="site-main checkout-name">
 
 	<div class="breadcrumb">
 		<?php
