@@ -287,3 +287,11 @@ tr.order-total {
     justify-content: flex-start;
     align-items: center;
 }
+
+#oreder_review {
+    width: 100%;
+}
+
+#payment {
+    width: 100%;
+}
