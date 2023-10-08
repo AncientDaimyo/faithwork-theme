@@ -153,7 +153,7 @@ function faithwork_theme_scripts()
 	wp_enqueue_style('faithwork-theme-style-slider', get_template_directory_uri() . '/css/slider.css');
 	wp_enqueue_style('faithwork-theme-style-woocommerce-custom', get_template_directory_uri() . '/css/woocommerce-custom.css');
 	wp_enqueue_style('faithwork-theme-style-custom-page', get_template_directory_uri() . '/css/custom-page-style.css');
-	wp_enqueue_style('faithwork-theme-style-custom-page', get_template_directory_uri() . '/css/info-content-style.css');
+	wp_enqueue_style('faithwork-theme-style-info-content', get_template_directory_uri() . '/css/info-content-style.css');
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-marquee', 'https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js');
