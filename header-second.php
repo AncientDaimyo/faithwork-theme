@@ -8,7 +8,7 @@
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html class="custom-html" <?php language_attributes(); ?>>
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
@@ -17,9 +17,9 @@
     <script>window.removeEventListener('scroll', headerScroll)</script>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="custom-body" <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<div id="page" class="site">
+	<div id="page" class="site custom-page">
 
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'faithwork-theme'); ?></a>
 
