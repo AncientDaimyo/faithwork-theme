@@ -1,7 +1,9 @@
 header.is_scrolled {
     background-color: white;
+    $header-color: white;
     &:hover {
         background-color: white;
+        $header-color: white;
     }
 
     #site-navigation {
@@ -10,6 +12,10 @@ header.is_scrolled {
                 li {
                     a {
                         color: black !important;
+                    }
+
+                    ul {
+                        background-color: white;
                     }
                 }
             }
@@ -30,6 +36,7 @@ header.is_scrolled {
     }
     &:hover {
         background-color: black;
+        $header-color: black;
         transition: 0.3s;
     }
 
@@ -93,6 +100,13 @@ header.is_scrolled {
                         top: 100%;
                         left: -999em;
                         z-index: 99999;
+                        width: 100vw;
+                        margin-top: var(--menu-probely);
+                        background-color: black;
+                        & {
+                            height: 30vh;
+                            transition: 1s;
+                        }
 
                         li {
                             &:hover,

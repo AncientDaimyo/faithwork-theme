@@ -4,6 +4,8 @@ header.is_scrolled {
     background-color: white; }
   header.is_scrolled #site-navigation #primary-menu #menu-header li a {
     color: black !important; }
+  header.is_scrolled #site-navigation #primary-menu #menu-header li ul {
+    background-color: white; }
 
 .site-header {
   margin: 0;
@@ -61,7 +63,13 @@ header.is_scrolled {
             position: absolute;
             top: 100%;
             left: -999em;
-            z-index: 99999; }
+            z-index: 99999;
+            width: 100vw;
+            margin-top: var(--menu-probely);
+            background-color: black; }
+            .site-header .main-navigation ul li ul {
+              height: 30vh;
+              transition: 1s; }
             .site-header .main-navigation ul li ul li:hover > ul, .site-header .main-navigation ul li ul li:focus > ul {
               display: block;
               left: auto; }
