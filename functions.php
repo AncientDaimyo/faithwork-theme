@@ -20,35 +20,12 @@ if (!defined('_S_VERSION')) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function faithwork_theme_setup()
+function faithwork_theme_setup() 
 {
-	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on faithwork-theme, use a find and replace
-		* to change 'faithwork-theme' to the name of your theme in all the template files.
-		*/
 	load_theme_textdomain('faithwork-theme', get_template_directory() . '/languages');
-
-	// Add default posts and comments RSS feed links to head.
 	add_theme_support('automatic-feed-links');
-
-	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
 	add_theme_support('title-tag');
-
-	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
 	add_theme_support('post-thumbnails');
-
-	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
 			'header-menu' => esc_html__('Header-menu', 'faithwork-theme'),
@@ -57,11 +34,6 @@ function faithwork_theme_setup()
 			'footer-menu-right' => esc_html__('Footer-right', 'faithwork-theme')
 		)
 	);
-
-	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
 	add_theme_support(
 		'html5',
 		array(
@@ -74,8 +46,6 @@ function faithwork_theme_setup()
 			'script',
 		)
 	);
-
-	// Set up the WordPress core custom background feature.
 	add_theme_support(
 		'custom-background',
 		apply_filters(
@@ -120,13 +90,6 @@ function faithwork_theme_content_width()
 }
 add_action('after_setup_theme', 'faithwork_theme_content_width', 0);
 
-
-
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
 function faithwork_theme_widgets_init()
 {
 	register_sidebar(
@@ -143,27 +106,21 @@ function faithwork_theme_widgets_init()
 }
 add_action('widgets_init', 'faithwork_theme_widgets_init');
 
-/**
- * Enqueue scripts and styles.
- */
 function faithwork_theme_scripts()
 {
 	wp_enqueue_style('faithwork-theme-style', get_stylesheet_uri(), array(), _S_VERSION);
-	wp_style_add_data('faithwork-theme-style', 'rtl', 'replace');
-	wp_enqueue_style('faithwork-theme-style-slider', get_template_directory_uri() . '/css/slider.css');
-	wp_enqueue_style('faithwork-theme-style-woocommerce-custom', get_template_directory_uri() . '/css/woocommerce-custom.css');
-	wp_enqueue_style('faithwork-theme-style-custom-page', get_template_directory_uri() . '/css/custom-page-style.css');
-	wp_enqueue_style('faithwork-theme-style-info-content', get_template_directory_uri() . '/css/info-content-style.css');
+	// wp_style_add_data('faithwork-theme-style', 'rtl', 'replace');
+	wp_enqueue_style('faithwork-theme-style-slider', get_template_directory_uri() . '/assets/styles/style.css');
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery-marquee', 'https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js');
-	wp_enqueue_script('faithwork-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
-	wp_enqueue_script('faithwork-theme-swiper', get_template_directory_uri() . '/js/swiper.min.js', array(), 1.0, true);
-	wp_enqueue_script('faithwork-theme-burger', get_template_directory_uri() . '/js/burger.js', array(), 1.0, true);
-	wp_enqueue_script('faithwork-theme-menu', get_template_directory_uri() . '/js/menu.js', array(), 1.0, true);
-	wp_enqueue_script('faithwork-theme-scroll', get_template_directory_uri() . '/js/scroll.js', array(), 1.0, true);
-	wp_enqueue_script('faithwork-theme-marquee', get_template_directory_uri() . '/js/begushyaya.js', array(), 1.0, true);
-	wp_enqueue_script('faithwork-theme-slider', get_template_directory_uri() . '/js/slider.js', array(), 1.0, true);
+	wp_enqueue_script('faithwork-theme-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true);
+	wp_enqueue_script('faithwork-theme-swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), 1.0, true);
+	wp_enqueue_script('faithwork-theme-burger', get_template_directory_uri() . '/assets/js/burger.js', array(), 1.0, true);
+	wp_enqueue_script('faithwork-theme-menu', get_template_directory_uri() . '/assets/js/menu.js', array(), 1.0, true);
+	wp_enqueue_script('faithwork-theme-scroll', get_template_directory_uri() . '/assets/js/scroll.js', array(), 1.0, true);
+	wp_enqueue_script('faithwork-theme-marquee', get_template_directory_uri() . '/assets/js/begushyaya.js', array(), 1.0, true);
+	wp_enqueue_script('faithwork-theme-slider', get_template_directory_uri() . '/assets/js/slider.js', array(), 1.0, true);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -208,6 +165,7 @@ if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
 
+
 add_filter('get_custom_logo', 'change_logo_class');
 function change_logo_class($html)
 {
@@ -222,26 +180,12 @@ function add_second_logo($html)
 	return $html;
 }
 
+
 /** TESTING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
 
 add_filter('woocommerce_checkout_fields', 'wpbl_remove_some_fields', 9999);
-
 function wpbl_remove_some_fields($array)
 {
-
-	/** Поля которые ОСТАЮТСЯ */
-
-	//unset( $array['billing']['billing_first_name'] ); // Имя
-	//unset( $array['billing']['billing_last_name'] ); // Фамилия
-	//unset( $array['billing']['billing_city'] ); // Населённый пункт
-	//unset( $array['billing']['billing_state'] ); // Область / район
-	//unset( $array['billing']['billing_postcode'] ); // Почтовый индекс
-	//unset( $array['billing']['billing_email'] ); // Email
-	//unset( $array['order']['order_comments'] ); // Примечание к заказу
-	// unset($array['billing']['billing_phone']); // Телефон
-	// unset($array['billing']['billing_address_1']); // Адрес (Номер дома и название улицы)
-	/** Поля которые УДАЛЯЮТСЯ */
-
 	unset($array['billing']['billing_company']); // Компания
 	unset($array['billing']['billing_country']); // Страна
 	// 1-ая строка адреса 
@@ -264,7 +208,6 @@ function wpbl_remove_some_fields($array)
 }
 
 add_filter('woocommerce_checkout_fields', 'wplb_reorder', 9999);
-
 function wplb_reorder($array)
 {
 	$array['billing']['billing_first_name']['class'][0] = 'form-row-first';

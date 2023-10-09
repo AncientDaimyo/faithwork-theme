@@ -1,0 +1,138 @@
+header.is_scrolled {
+	background-color: white;
+    &:hover {
+        background-color: white;
+    }
+
+    nav div ul li a {
+        color: #000000;
+    }
+}
+
+.site-header {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: var(--logo-width);
+    z-index: 100;
+    font-size: 3opx;
+    & {
+        background-color: transparent;
+        transition: 0.3s;
+    }
+    &:hover {
+        background-color: black;
+        transition: 0.3s;
+    }
+
+    .custom-logo-link {
+        display: inline-block;
+
+        .faithwork-logo {
+            height: var(--logo-width) !important;
+            width: var(--logo-width) !important;
+            margin-left: calc((100vw - var(--logo-width)) / 2 - 0.2vw);
+            margin-right: auto;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+        }
+        .faithwork-logo.inactive {
+            display: none;
+        }
+
+       
+
+        
+    }
+    @media (min-width: 1600px) {
+        .main-navigation {
+            left: var(--menu-spacing);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            & {
+                height: var(--logo-width);
+                transition: 0.4s;
+            }
+
+            .menu-toggle {
+                display: none !important;
+            }
+
+            ul {
+                display: flex;
+                
+
+                li {
+                    position: relative;
+                    margin-right: var(--menu-probely);
+                    &:hover,
+                    &:focus {
+                        > ul {
+                            left: auto;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    ul {
+                        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+                        float: left;
+                        position: absolute;
+                        top: 100%;
+                        left: -999em;
+                        z-index: 99999;
+
+                        li {
+                            &:hover,
+                            &:focus {
+                                > ul {
+                                    display: block;
+                                    left: auto;
+                                }
+                            }
+
+                            a {
+                                width: 200px;
+                            }
+
+                            ul {
+                                left: -999em;
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1600px) { 
+        .main-navigation{
+            &.toggled {
+                ul {
+                    display: block;
+                }
+            }
+            @import "components/burger.scss";
+            ul {
+                display: none;
+                    list-style: none;
+                    margin: 0;
+                    padding-left: 0;
+            }
+        } 
+        @import "components/drop-down_menu.scss";
+        
+    }
+
+    @import "components/header-icons";
+}
+

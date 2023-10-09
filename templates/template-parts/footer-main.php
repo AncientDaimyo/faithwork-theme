@@ -15,7 +15,7 @@
 <footer id="colophon" class="site-footer main-block">
 	<div class="footer-main">
 		<div class="footer-top">
-			<img class="footer-image" src="wp-content/themes/faithwork-theme/pic/FAITHWORK_LOGO_Header_Crop_Black.png">
+			<img class="footer-image" src=<?php echo(get_template_directory_uri() . '/assets/pic/FAITHWORK_LOGO_Header_Crop_Black.png')?>>
 		</div>
 		<div class="footer-bottom">
 			<?php

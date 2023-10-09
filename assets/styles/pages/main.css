@@ -1,0 +1,22 @@
+.site-main.custom {
+  height: auto; }
+
+.main-block {
+  --mbh: 100vh;
+  height: calc(100vh - var(--logo-width)); }
+  .main-block.first .video-main-autoplay {
+    width: 100vw;
+    height: auto; }
+    .main-block.first .video-main-autoplay source {
+      width: 100vw;
+      height: auto; }
+  .main-block.second {
+    background-color: blue; }
+  .main-block.third {
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+
+/*# sourceMappingURL=main.css.map */

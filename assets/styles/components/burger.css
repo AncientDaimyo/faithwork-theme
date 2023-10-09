@@ -1,0 +1,70 @@
+.menu-toggle {
+  left: var(--menu-spacing);
+  top: 0;
+  cursor: pointer;
+  display: block;
+  border: none;
+  position: absolute;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+  margin: calc((var(--logo-width) - 26px) / 2) auto; }
+  .menu-toggle::before, .menu-toggle::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #ffffff; }
+  .menu-toggle::before {
+    box-shadow: 0 11px 0 #ffffff; }
+    .menu-toggle::before {
+      top: 0;
+      transition: box-shadow 0.4s 0.2s, top 0.4s 0.2s, transform 0.4s; }
+  .menu-toggle::after {
+    bottom: 0;
+    transition: bottom 0.4s 0.2s, transform 0.4s; }
+  .menu-toggle.active::before {
+    top: 11px;
+    transform: rotate(45deg);
+    transition: box-shadow 0.2s, top 0.4s, transform 0.4s 0.2s; }
+    .menu-toggle.active::before {
+      box-shadow: 0 0 0 #000000;
+      background: #000000; }
+  .menu-toggle.active::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom 0.4s, transform 0.4s 0.2s; }
+    .menu-toggle.active::after {
+      background: #000000; }
+  .menu-toggle.black::before, .menu-toggle.black::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000000; }
+  .menu-toggle.black::before {
+    top: 0;
+    transition: box-shadow 0.4s 0.2s, top 0.4s 0.2s, transform 0.4s; }
+    .menu-toggle.black::before {
+      box-shadow: 0 11px 0 #000000; }
+  .menu-toggle.black::after {
+    bottom: 0;
+    transition: bottom 0.4s 0.2s, transform 0.4s; }
+  .menu-toggle.black.active::before {
+    top: 11px;
+    transform: rotate(45deg);
+    transition: box-shadow 0.2s, top 0.4s, transform 0.4s 0.2s; }
+    .menu-toggle.black.active::before {
+      box-shadow: 0 6px 0 rgba(255, 255, 255, 0); }
+  .menu-toggle.black.active::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom 0.4s, transform 0.4s 0.2s; }
+
+/*# sourceMappingURL=burger.css.map */

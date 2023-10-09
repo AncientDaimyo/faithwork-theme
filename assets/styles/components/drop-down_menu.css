@@ -1,0 +1,22 @@
+#site-navigation.toggled {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 0;
+  padding-left: var(--menu-spacing); }
+#site-navigation.toggled {
+  height: 100vh;
+  transition: 0.4s; }
+#site-navigation #primary-menu.menu-open {
+  display: flex;
+  margin-top: var(--logo-width); }
+  #site-navigation #primary-menu.menu-open ul li a {
+    color: black; }
+
+/*# sourceMappingURL=drop-down_menu.css.map */

@@ -1,0 +1,23 @@
+.info-content-page {
+  display: flex; }
+  .info-content-page .size-guide-heading {
+    margin-left: var(--menu-spacing);
+    width: 50%; }
+    .info-content-page .size-guide-heading h1 {
+      font-size: 64px;
+      margin-top: 44px;
+      margin-bottom: 0;
+      padding-bottom: 11px; }
+    .info-content-page .size-guide-heading .size-guide-article {
+      font-family: "Human Sans", sans-serif;
+      font-weight: 400; }
+      .info-content-page .size-guide-heading .size-guide-article p {
+        font-size: 24px;
+        padding-top: 11px; }
+  .info-content-page .size-guide-picture img {
+    padding-top: 140px;
+    padding-left: 88px;
+    height: 640px;
+    width: auto; }
+
+/*# sourceMappingURL=size-guide.css.map */
