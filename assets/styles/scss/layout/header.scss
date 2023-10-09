@@ -1,11 +1,19 @@
 header.is_scrolled {
-	background-color: white;
+    background-color: white;
     &:hover {
         background-color: white;
     }
 
-    nav div ul li a {
-        color: #000000;
+    #site-navigation {
+        #primary-menu {
+            #menu-header {
+                li {
+                    a {
+                        color: black !important;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -40,10 +48,6 @@ header.is_scrolled {
         .faithwork-logo.inactive {
             display: none;
         }
-
-       
-
-        
     }
     @media (min-width: 1600px) {
         .main-navigation {
@@ -65,7 +69,6 @@ header.is_scrolled {
 
             ul {
                 display: flex;
-                
 
                 li {
                     position: relative;
@@ -114,8 +117,8 @@ header.is_scrolled {
             }
         }
     }
-    @media (max-width: 1600px) { 
-        .main-navigation{
+    @media (max-width: 1600px) {
+        .main-navigation {
             &.toggled {
                 ul {
                     display: block;
@@ -124,15 +127,13 @@ header.is_scrolled {
             @import "components/burger.scss";
             ul {
                 display: none;
-                    list-style: none;
-                    margin: 0;
-                    padding-left: 0;
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
             }
-        } 
+        }
         @import "components/drop-down_menu.scss";
-        
     }
 
     @import "components/header-icons";
 }
-

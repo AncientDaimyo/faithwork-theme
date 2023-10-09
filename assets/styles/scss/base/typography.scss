@@ -3,5 +3,8 @@
 	font-weight: 600 !important;
 	a {
 		text-decoration: none !important;
+		&:hover {
+			color: grey !important;
+		}
 	}
 }

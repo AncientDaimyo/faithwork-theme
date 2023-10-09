@@ -3,5 +3,7 @@
   font-weight: 600 !important; }
   * a {
     text-decoration: none !important; }
+    * a:hover {
+      color: grey !important; }
 
 /*# sourceMappingURL=typography.css.map */

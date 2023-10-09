@@ -53,6 +53,8 @@ input {
   font-weight: 600 !important; }
   * a {
     text-decoration: none !important; }
+    * a:hover {
+      color: grey !important; }
 
 .marquee {
   overflow: hidden;
@@ -145,8 +147,8 @@ header.is_scrolled {
   background-color: white; }
   header.is_scrolled:hover {
     background-color: white; }
-  header.is_scrolled nav div ul li a {
-    color: #000000; }
+  header.is_scrolled #site-navigation #primary-menu #menu-header li a {
+    color: black !important; }
 
 .site-header {
   margin: 0;
