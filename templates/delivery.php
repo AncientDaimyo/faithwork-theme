@@ -7,7 +7,7 @@
 /*
 Template Name: delivery
 */
-get_header("second");
+get_template_part('templates/template-parts/header-second');
 ?>
 
 <main id="primary" class="site-main checkout-main">
@@ -51,5 +51,4 @@ get_header("second");
     </div>
 </main><!-- #main -->
 
-<?php
-get_footer("second");
+<?php get_template_part('templates/template-parts/footer-second') ?>
