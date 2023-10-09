@@ -1,0 +1,31 @@
+.navigation-icons {
+  height: var(--logo-width);
+  position: absolute;
+  right: var(--menu-spacing);
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100; }
+  .navigation-icons.active {
+    left: 20vw;
+    justify-content: space-between;
+    transition: 1s; }
+  .navigation-icons .nav-icon {
+    margin-left: var(--menu-probely); }
+    .navigation-icons .nav-icon .header-svg {
+      transform: scale(0.75, 0.75); }
+      .navigation-icons .nav-icon .header-svg.black {
+        filter: invert(100%); }
+      .navigation-icons .nav-icon .header-svg:hover {
+        filter: invert(50%); }
+
+ul.sub-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #efefef; }
+
+/*# sourceMappingURL=header-icons.css.map */

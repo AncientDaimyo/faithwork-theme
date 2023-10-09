@@ -1,0 +1,22 @@
+@media (max-width: 1000px) {
+    * {
+        --menu-spacing: 22px;
+    }
+
+    body {
+        height: 100vh !important;
+    }
+
+    .site-header {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .navigation-icons {
+        display: none;
+    }
+
+    .navigation-icons.active {
+        display: flex;
+    }
+}

@@ -15,7 +15,7 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
-
+/assets/.sass-cache
 # Configuration
 wp-config.php
 

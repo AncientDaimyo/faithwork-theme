@@ -1,0 +1,23 @@
+.info-content-page {
+  display: flex; }
+  .info-content-page .goods-exchange-and-return-heading {
+    margin-left: var(--menu-spacing);
+    width: 50%; }
+    .info-content-page .goods-exchange-and-return-heading h1 {
+      font-size: 64px;
+      margin-top: 44px;
+      margin-bottom: 22px; }
+    .info-content-page .goods-exchange-and-return-heading .goods-exchange-and-return-article {
+      font-family: "Human Sans", sans-serif;
+      font-weight: 400; }
+      .info-content-page .goods-exchange-and-return-heading .goods-exchange-and-return-article p {
+        display: block;
+        font-size: 24px;
+        margin-top: 11px; }
+  .info-content-page .goods-exchange-and-return-picture img {
+    padding-top: 140px;
+    padding-left: 88px;
+    height: 640px;
+    width: auto; }
+
+/*# sourceMappingURL=goods-exchange-and-return.css.map */
