@@ -17,4 +17,4 @@ const swiper = new Swiper('.swiper', {
 	}
 });
 
-document.querySelector('.swiper').swiper;
+document.querySelector('.swiper').swiper();

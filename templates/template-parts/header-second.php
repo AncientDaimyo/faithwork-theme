@@ -14,7 +14,6 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
-    <script>window.removeEventListener('scroll', headerScroll)</script>
 </head>
 
 <body class="custom-body" <?php body_class(); ?>>

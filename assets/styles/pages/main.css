@@ -1,22 +1,19 @@
 .site-main.custom {
-  height: auto; }
-
-.main-block {
-  --mbh: 100vh;
-  height: calc(100vh - var(--logo-width)); }
-  .main-block.first .video-main-autoplay {
-    width: 100vw;
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - var(--logo-width) - 155px); }
+  .site-main.custom .main-block {
     height: auto; }
-    .main-block.first .video-main-autoplay source {
-      width: 100vw;
+    .site-main.custom .main-block.first .video-main-autoplay {
+      width: inherit;
       height: auto; }
-  .main-block.second {
-    background-color: blue; }
-  .main-block.third {
-    background-color: white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center; }
+    .site-main.custom .main-block.second {
+      background-color: blue; }
+    .site-main.custom .main-block.third {
+      background-color: white;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

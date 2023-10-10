@@ -206,6 +206,30 @@ input[type=email]:-moz-placeholder {
     font-weight: 600;
 }
 
+input[type=password]::-webkit-input-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=password]:-ms-input-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=password]::-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
+input[type=password]:-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "HumanSans", sans-serif;
+    font-weight: 600;
+}
+
 textarea::placeholder {
     color: #a9a9a9;
     font-family: "HumanSans", sans-serif;
@@ -226,6 +250,10 @@ input[type=tel] {
 }
 
 input[type=email] {
+    padding-left: 22px;
+}
+
+input[type=password] {
     padding-left: 22px;
 }
 

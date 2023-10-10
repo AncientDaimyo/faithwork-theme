@@ -1,0 +1,71 @@
+.account-main {
+    min-height: calc(100vh - var(--logo-width) - 155px);
+    .ajax-info {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: calc(var(--logo-width) + 50px);
+        height: 720px;
+        width: 100vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        z-index: -100;
+    }
+    .login-register-block {
+        min-height: calc(100vh - var(--logo-width) - 155px);
+        width: 100vw;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-self: center;
+        &.disable {
+            display: none;
+        }
+
+        .faithwork-form {
+            height: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            z-index: 100;
+
+            .account-full-forms {
+                width: calc((100vw - 2 * var(--menu-spacing)) / 3);
+                height: 565px;
+                border: 2px solid #dddddd;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+
+                fieldset {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+
+                    .form-title {
+                        display: flex;
+                    }
+                    .account-forms {
+                        width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+                        height: 66px;
+                        display: flex;
+                        justify-content: center;
+
+                        input {
+                            border-color: #dddddd;
+                            width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+                            height: 44px;
+                            font-size: 22px;
+
+                            &#password {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

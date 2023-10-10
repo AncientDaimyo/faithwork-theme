@@ -158,7 +158,7 @@ header.is_scrolled {
   width: 100%;
   height: var(--logo-width);
   z-index: 100;
-  font-size: 3opx; }
+  font-size: 20px; }
   .site-header {
     background-color: transparent;
     transition: 0.3s; }
@@ -444,6 +444,199 @@ header.is_scrolled {
       justify-content: center;
       align-items: center; }
 
+#masthead.site-header-second {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: var(--logo-width);
+  z-index: 100;
+  font-size: 17px; }
+  #masthead.site-header-second {
+    background-color: black;
+    transition: 0.3s; }
+  #masthead.site-header-second .custom-logo-link {
+    display: inline-block; }
+    #masthead.site-header-second .custom-logo-link .faithwork-logo {
+      height: var(--logo-width) !important;
+      width: var(--logo-width) !important;
+      margin-left: calc((100vw - var(--logo-width)) / 2 - 0.2vw);
+      margin-right: auto;
+      position: absolute;
+      top: 0;
+      z-index: 100; }
+    #masthead.site-header-second .custom-logo-link .faithwork-logo.inactive {
+      display: none; }
+  @media (min-width: 1600px) {
+    #masthead.site-header-second .main-navigation {
+      left: var(--menu-spacing);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      top: 0; }
+      #masthead.site-header-second .main-navigation {
+        height: var(--logo-width);
+        transition: 0.4s; }
+      #masthead.site-header-second .main-navigation .menu-toggle {
+        display: none !important; }
+      #masthead.site-header-second .main-navigation ul {
+        display: flex; }
+        #masthead.site-header-second .main-navigation ul li {
+          position: relative;
+          margin-right: var(--menu-probely); }
+          #masthead.site-header-second .main-navigation ul li:hover > ul, #masthead.site-header-second .main-navigation ul li:focus > ul {
+            left: auto; }
+          #masthead.site-header-second .main-navigation ul li a {
+            display: block;
+            text-decoration: none;
+            color: white; }
+          #masthead.site-header-second .main-navigation ul li ul {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            float: left;
+            position: absolute;
+            top: 100%;
+            left: -999em;
+            z-index: 99999;
+            width: 100vw;
+            margin-top: var(--menu-probely);
+            background-color: black; }
+            #masthead.site-header-second .main-navigation ul li ul {
+              height: 30vh;
+              transition: 1s; }
+            #masthead.site-header-second .main-navigation ul li ul li:hover > ul, #masthead.site-header-second .main-navigation ul li ul li:focus > ul {
+              display: block;
+              left: auto; }
+            #masthead.site-header-second .main-navigation ul li ul li a {
+              width: 200px; }
+            #masthead.site-header-second .main-navigation ul li ul li ul {
+              left: -999em;
+              top: 0; } }
+  @media (max-width: 1600px) {
+    #masthead.site-header-second .main-navigation.toggled ul {
+      display: block; }
+    #masthead.site-header-second .main-navigation .menu-toggle {
+      left: var(--menu-spacing);
+      top: 0;
+      cursor: pointer;
+      display: block;
+      border: none;
+      position: absolute;
+      background: transparent;
+      width: 40px;
+      height: 26px;
+      margin: calc((var(--logo-width) - 26px) / 2) auto; }
+      #masthead.site-header-second .main-navigation .menu-toggle::before, #masthead.site-header-second .main-navigation .menu-toggle::after {
+        content: "";
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #ffffff; }
+      #masthead.site-header-second .main-navigation .menu-toggle::before {
+        box-shadow: 0 11px 0 #ffffff; }
+        #masthead.site-header-second .main-navigation .menu-toggle::before {
+          top: 0;
+          transition: box-shadow 0.4s 0.2s, top 0.4s 0.2s, transform 0.4s; }
+      #masthead.site-header-second .main-navigation .menu-toggle::after {
+        bottom: 0;
+        transition: bottom 0.4s 0.2s, transform 0.4s; }
+      #masthead.site-header-second .main-navigation .menu-toggle.active::before {
+        top: 11px;
+        transform: rotate(45deg);
+        transition: box-shadow 0.2s, top 0.4s, transform 0.4s 0.2s; }
+        #masthead.site-header-second .main-navigation .menu-toggle.active::before {
+          box-shadow: 0 0 0 #000000;
+          background: #000000; }
+      #masthead.site-header-second .main-navigation .menu-toggle.active::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom 0.4s, transform 0.4s 0.2s; }
+        #masthead.site-header-second .main-navigation .menu-toggle.active::after {
+          background: #000000; }
+      #masthead.site-header-second .main-navigation .menu-toggle.black::before, #masthead.site-header-second .main-navigation .menu-toggle.black::after {
+        content: "";
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #000000; }
+      #masthead.site-header-second .main-navigation .menu-toggle.black::before {
+        top: 0;
+        transition: box-shadow 0.4s 0.2s, top 0.4s 0.2s, transform 0.4s; }
+        #masthead.site-header-second .main-navigation .menu-toggle.black::before {
+          box-shadow: 0 11px 0 #000000; }
+      #masthead.site-header-second .main-navigation .menu-toggle.black::after {
+        bottom: 0;
+        transition: bottom 0.4s 0.2s, transform 0.4s; }
+      #masthead.site-header-second .main-navigation .menu-toggle.black.active::before {
+        top: 11px;
+        transform: rotate(45deg);
+        transition: box-shadow 0.2s, top 0.4s, transform 0.4s 0.2s; }
+        #masthead.site-header-second .main-navigation .menu-toggle.black.active::before {
+          box-shadow: 0 6px 0 rgba(255, 255, 255, 0); }
+      #masthead.site-header-second .main-navigation .menu-toggle.black.active::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom 0.4s, transform 0.4s 0.2s; }
+    #masthead.site-header-second .main-navigation ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding-left: 0; }
+    #masthead.site-header-second #site-navigation.toggled {
+      top: 0;
+      position: absolute;
+      width: 100%;
+      background-color: white;
+      z-index: 100;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 0;
+      padding-left: var(--menu-spacing); }
+    #masthead.site-header-second #site-navigation.toggled {
+      height: 100vh;
+      transition: 0.4s; }
+    #masthead.site-header-second #site-navigation #primary-menu.menu-open {
+      display: flex;
+      margin-top: var(--logo-width); }
+      #masthead.site-header-second #site-navigation #primary-menu.menu-open ul li a {
+        color: black; } }
+  #masthead.site-header-second .navigation-icons {
+    height: var(--logo-width);
+    position: absolute;
+    right: var(--menu-spacing);
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100; }
+    #masthead.site-header-second .navigation-icons.active {
+      left: 20vw;
+      justify-content: space-between;
+      transition: 1s; }
+    #masthead.site-header-second .navigation-icons .nav-icon {
+      margin-left: var(--menu-probely); }
+      #masthead.site-header-second .navigation-icons .nav-icon .header-svg {
+        transform: scale(0.75, 0.75); }
+        #masthead.site-header-second .navigation-icons .nav-icon .header-svg.black {
+          filter: invert(100%); }
+        #masthead.site-header-second .navigation-icons .nav-icon .header-svg:hover {
+          filter: invert(50%); }
+  #masthead.site-header-second ul.sub-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #efefef; }
+
 .info-content-page {
   display: flex; }
   .info-content-page .about-us-heading {
@@ -557,25 +750,22 @@ header.is_scrolled {
     width: auto; }
 
 .site-main.custom {
-  height: auto; }
-
-.main-block {
-  --mbh: 100vh;
-  height: calc(100vh - var(--logo-width)); }
-  .main-block.first .video-main-autoplay {
-    width: 100vw;
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - var(--logo-width) - 155px); }
+  .site-main.custom .main-block {
     height: auto; }
-    .main-block.first .video-main-autoplay source {
-      width: 100vw;
+    .site-main.custom .main-block.first .video-main-autoplay {
+      width: inherit;
       height: auto; }
-  .main-block.second {
-    background-color: blue; }
-  .main-block.third {
-    background-color: white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center; }
+    .site-main.custom .main-block.second {
+      background-color: blue; }
+    .site-main.custom .main-block.third {
+      background-color: white;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
 
 .info-content-page {
   display: flex; }
@@ -623,6 +813,61 @@ header.is_scrolled {
     padding-left: 88px;
     height: 640px;
     width: auto; }
+
+.account-main {
+  min-height: calc(100vh - var(--logo-width) - 155px); }
+  .account-main .ajax-info {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: calc(var(--logo-width) + 50px);
+    height: 720px;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: -100; }
+  .account-main .login-register-block {
+    min-height: calc(100vh - var(--logo-width) - 155px);
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center; }
+    .account-main .login-register-block.disable {
+      display: none; }
+    .account-main .login-register-block .faithwork-form {
+      height: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      z-index: 100; }
+      .account-main .login-register-block .faithwork-form .account-full-forms {
+        width: calc((100vw - 2 * var(--menu-spacing)) / 3);
+        height: 565px;
+        border: 2px solid #dddddd;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center; }
+        .account-main .login-register-block .faithwork-form .account-full-forms fieldset {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center; }
+          .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-title {
+            display: flex; }
+          .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms {
+            width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+            height: 66px;
+            display: flex;
+            justify-content: center; }
+            .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms input {
+              border-color: #dddddd;
+              width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+              height: 44px;
+              font-size: 22px; }
+              .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms input#password {
+                font-size: 22px; }
 
 @media (max-width: 1000px) {
   * {
@@ -810,6 +1055,26 @@ input[type=email]:-moz-placeholder {
   font-family: "HumanSans", sans-serif;
   font-weight: 600; }
 
+input[type=password]::-webkit-input-placeholder {
+  color: #a9a9a9;
+  font-family: "HumanSans", sans-serif;
+  font-weight: 600; }
+
+input[type=password]:-ms-input-placeholder {
+  color: #a9a9a9;
+  font-family: "HumanSans", sans-serif;
+  font-weight: 600; }
+
+input[type=password]::-moz-placeholder {
+  color: #a9a9a9;
+  font-family: "HumanSans", sans-serif;
+  font-weight: 600; }
+
+input[type=password]:-moz-placeholder {
+  color: #a9a9a9;
+  font-family: "HumanSans", sans-serif;
+  font-weight: 600; }
+
 textarea::placeholder {
   color: #a9a9a9;
   font-family: "HumanSans", sans-serif;
@@ -826,6 +1091,9 @@ input[type=tel] {
   padding-left: 22px; }
 
 input[type=email] {
+  padding-left: 22px; }
+
+input[type=password] {
   padding-left: 22px; }
 
 .futbolka-name {

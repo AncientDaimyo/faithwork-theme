@@ -1,42 +1,12 @@
-header.is_scrolled {
-    background-color: white;
-    $header-color: white;
-    &:hover {
-        background-color: white;
-        $header-color: white;
-    }
-
-    #site-navigation {
-        #primary-menu {
-            #menu-header {
-                li {
-                    a {
-                        color: black !important;
-                    }
-
-                    ul {
-                        background-color: white;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.site-header {
+#masthead.site-header-second {
     margin: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     height: var(--logo-width);
     z-index: 100;
-    font-size: 20px ;
+    font-size: 17px ;
     & {
-        background-color: transparent;
-        transition: 0.3s;
-    }
-    &:hover {
         background-color: black;
-        $header-color: black;
         transition: 0.3s;
     }
 

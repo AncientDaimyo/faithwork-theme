@@ -1,28 +1,24 @@
 .site-main.custom {
+    width: 100%;
     height: auto;
-}
-
-.main-block {
-    --mbh: 100vh;
-    height: calc(100vh - var(--logo-width));
-    &.first {
-        .video-main-autoplay {
-            width: 100vw;
-            height: auto;
-            source {
-                width: 100vw;
+    min-height: calc(100vh - var(--logo-width) - 155px);
+    .main-block {
+        height: auto;
+        &.first {
+            .video-main-autoplay {
+                width: inherit;
                 height: auto;
             }
         }
-    }
-    &.second {
-        background-color: blue;
-    }
-    &.third {
-        background-color: white;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        &.second {
+            background-color: blue;
+        }
+        &.third {
+            background-color: white;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
