@@ -3,7 +3,8 @@
   height: auto;
   min-height: calc(100vh - var(--logo-width) - 155px); }
   .site-main.custom .main-block {
-    height: auto; }
+    height: auto;
+    width: inherit; }
     .site-main.custom .main-block.first .video-main-autoplay {
       width: inherit;
       height: auto; }

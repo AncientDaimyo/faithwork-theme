@@ -4,6 +4,7 @@
     min-height: calc(100vh - var(--logo-width) - 155px);
     .main-block {
         height: auto;
+        width: inherit;
         &.first {
             .video-main-autoplay {
                 width: inherit;

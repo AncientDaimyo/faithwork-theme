@@ -155,7 +155,7 @@ header.is_scrolled {
 .site-header {
   margin: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: var(--logo-width);
   z-index: 100;
   font-size: 20px; }
@@ -754,7 +754,8 @@ header.is_scrolled {
   height: auto;
   min-height: calc(100vh - var(--logo-width) - 155px); }
   .site-main.custom .main-block {
-    height: auto; }
+    height: auto;
+    width: inherit; }
     .site-main.custom .main-block.first .video-main-autoplay {
       width: inherit;
       height: auto; }
