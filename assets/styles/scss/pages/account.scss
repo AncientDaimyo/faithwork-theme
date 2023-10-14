@@ -45,6 +45,20 @@
                     justify-content: center;
                     align-items: center;
 
+                    .account-legend {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: auto;
+                        padding-top: 44px;
+                        padding-bottom: -44px;
+    
+                        .account-legend-image {
+                            width: 75%;
+                            height: auto;
+                        }
+                    }
+
                     .form-title {
                         display: flex;
                         flex-flow: row nowrap;

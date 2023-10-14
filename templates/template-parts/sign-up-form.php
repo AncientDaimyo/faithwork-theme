@@ -6,7 +6,7 @@
             $email = get_query_var('email');
             echo $email;
             ?>
-            <legend class="account-legend">Тут будет жоский(joski') логотип</legend>
+            <legend class="account-legend"><img class="account-legend-image" src=<?php echo(get_template_directory_uri() . '/assets/pic/FAITHWORK_LOGO_Header_Crop_Black.png')?>></legend>
             <div class="account-forms">
                 <input name="faithwork_user_email" id="faithwork-user-email" class="faithwork-user-email" type="hidden" value="<?php echo ($email); ?>" />
             </div>
@@ -25,9 +25,9 @@
             <div class="account-forms">
                 <input name="faithwork-user-pass" id="password" class="password" type="password" placeholder="Пароль" />
             </div>
-            <div class="account-forms">
+            <div class="account-forms-button">
                 <input type="hidden" name="faithwork_csrf" value="<?php echo wp_create_nonce('faithwork-csrf'); ?>" />
-                <input type="submit" value="<?php _e('Register Your Account'); ?>" />
+                <input type="submit" value="<?php _e('РЕГИСТРАЦИЯ'); ?>" />
             </div>
         </fieldset>
     </div>

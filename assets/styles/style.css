@@ -885,6 +885,16 @@ header.is_scrolled {
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center; }
+          .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-legend {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            padding-top: 44px;
+            padding-bottom: -44px; }
+            .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-legend .account-legend-image {
+              width: 75%;
+              height: auto; }
           .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-title {
             display: flex;
             flex-flow: row nowrap;
