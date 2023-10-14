@@ -37,20 +37,55 @@
         .account-main .login-register-block .faithwork-form .account-full-forms fieldset {
           display: flex;
           flex-flow: column nowrap;
-          justify-content: center; }
+          justify-content: center;
+          align-items: center; }
           .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-title {
-            display: flex; }
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            padding-bottom: 22px; }
+            .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-title span {
+              font-size: 33px;
+              font-weight: 600;
+              width: 100%;
+              text-align: center; }
+          .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-text {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            padding-bottom: 22px;
+            width: 95%; }
+            .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-text p {
+              font-size: 14px;
+              font-weight: 400;
+              text-align: center;
+              line-height: 1.2; }
+            .account-main .login-register-block .faithwork-form .account-full-forms fieldset .form-text b {
+              font-weight: 600; }
           .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms {
             width: calc((100vw - 2 * var(--menu-spacing)) / 4);
-            height: 66px;
-            display: flex;
-            justify-content: center; }
+            height: 66px; }
             .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms input {
               border-color: #dddddd;
               width: calc((100vw - 2 * var(--menu-spacing)) / 4);
               height: 44px;
               font-size: 22px; }
               .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms input#password {
+                font-size: 22px; }
+          .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms-button {
+            width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+            height: 66px; }
+            .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms-button input {
+              border-color: #dddddd;
+              width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+              height: 44px;
+              font-size: 22px;
+              background: black;
+              color: white;
+              text-align: center;
+              border-radius: 4px;
+              padding: 0px 22px 0px 22px; }
+              .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms-button input#password {
                 font-size: 22px; }
 
 /*# sourceMappingURL=account.css.map */

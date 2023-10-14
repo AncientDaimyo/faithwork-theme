@@ -43,21 +43,71 @@
                     display: flex;
                     flex-flow: column nowrap;
                     justify-content: center;
+                    align-items: center;
 
                     .form-title {
                         display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        padding-bottom: 22px;
+
+                        span {
+                            font-size: 33px;
+                            font-weight: 600;
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
+
+                    .form-text {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        padding-bottom: 22px;
+                        width: 95%;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-align: center;
+                            line-height: 1.2;
+                        }
+
+                        b {
+                            font-weight: 600;
+                        }
+                    }
+
                     .account-forms {
                         width: calc((100vw - 2 * var(--menu-spacing)) / 4);
                         height: 66px;
-                        display: flex;
-                        justify-content: center;
 
                         input {
                             border-color: #dddddd;
                             width: calc((100vw - 2 * var(--menu-spacing)) / 4);
                             height: 44px;
                             font-size: 22px;
+
+                            &#password {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+
+                    .account-forms-button {
+                        width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+                        height: 66px;
+
+                        input {
+                            border-color: #dddddd;
+                            width: calc((100vw - 2 * var(--menu-spacing)) / 4);
+                            height: 44px;
+                            font-size: 22px;
+                            background: black;
+                            color: white;
+                            text-align: center;
+                            border-radius: 4px;
+                            padding: 0px 22px 0px 22px;
 
                             &#password {
                                 font-size: 22px;

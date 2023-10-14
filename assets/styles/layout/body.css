@@ -1,0 +1,12 @@
+body {
+  max-width: 100%;
+  height: auto; }
+  body .site {
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden; }
+
+*::-webkit-scrollbar {
+  width: 0; }
+
+/*# sourceMappingURL=body.css.map */

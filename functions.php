@@ -178,7 +178,7 @@ function change_logo_class($html)
 add_filter('get_custom_logo', 'add_second_logo');
 function add_second_logo($html)
 {
-	$html = str_replace('<img', '<img id="logo2" class="faithwork-logo inactive" src="' . get_theme_mod('test_img') . '"><img', $html);
+	$html = str_replace('<img', '<img id="logo2" class="faithwork-logo inactive" alt="FAITHWORK" src="' . get_theme_mod('test_img') . '"><img', $html);
 	return $html;
 }
 

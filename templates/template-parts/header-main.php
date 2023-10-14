@@ -32,5 +32,5 @@
 				);
 				?>
 			</nav><!-- #site-navigation -->
-			<?php get_template_part('templates/template-parts/header-icons.php'); ?>
+			<?php get_template_part('templates/template-parts/header-icons'); ?>
 		</header><!-- #masthead -->

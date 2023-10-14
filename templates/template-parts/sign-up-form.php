@@ -17,7 +17,7 @@
                 <input name="faithwork_user_last" id="faithwork-user-last" type="text" class="faithwork-user-last" placeholder="Березин" />
             </div>
             <div class="account-forms">
-                <input name="faithwork_user_tel" id="tel" class="tel" type="tel" placeholder="+7 123 456 78 90" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" size="11" maxlength="11" />
+                <input name="faithwork_user_tel" id="tel" class="tel" type="tel" placeholder="+7 123 456 78 90" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" size="12" maxlength="12" />
             </div>
             <div class="account-forms">
                 <input name="date" id="date" class="date" type="text" placeholder="28.08.2002" maxlength="8" max="<?php echo date("d.m.Y"); ?>" />
@@ -36,7 +36,7 @@
 <script>
     jQuery("faithwork-registration-form").on("submit", function() {
         jQuery.ajax({
-            url: document.location.protocol + '//' + document.location.host + '/wp-content/themes/faithwork-theme/functions/sign-up-ajax.php',
+            url: document.location.protocol + '//' + document.location.host + '/wp-content/themes/faithwork-theme/fw-functions/sign-up-ajax.php',
             type: 'POST',
             data: jQuery(this).serialize(),
             beforeSend: function(xhr) {
@@ -44,8 +44,6 @@
                 jQuery('#faithwork_login_check').addClass('disable');
             },
             success: function(data) {
-
-                jQuery(".login-block").html(data);
                 jQuery('.ajax-info').empty();
             },
             error: function() {

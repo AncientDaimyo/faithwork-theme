@@ -8,16 +8,16 @@
 
             <fieldset>
                 
-                <div class="form-title">ВХОД / РЕГИСТРАЦИЯ</div>
+                <div class="form-title"><span> ВХОД / РЕГИСТРАЦИЯ </span></div>
                 <div class="form-text">
-                    <p>Получите доступ к эксклюзивным преимуществам учетной записи FAITHWORK</p>
+                    <p>ПОЛУЧИТЕ ЭКСКЛЮЗИВНЫЕ ПРЕДЛОЖЕНИЯ <br> С УЧЕТНОЙ ЗАПИСЬЮ <br> <b>FAITHWORK</b></p>
                 </div>
 
                 <div class="account-forms">
                     <input name="faithwork_user_email" id="faithwork_user_email" class="faithwork_user_login" type="text" placeholder="Email" />
                 </div>
-                <div class="account-forms">
-                    <input type="submit" name="send" value="Отправить">
+                <div class="account-forms-button">
+                    <input type="submit" name="send" value="ДАЛЕЕ">
                 </div>
             </fieldset>
         </div>

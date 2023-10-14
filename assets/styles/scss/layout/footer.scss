@@ -87,8 +87,10 @@
         .footer-copyright-paragraf {
             text-align: center;
             color: rgba(0, 0, 0, 0.5);
-            font-size: 0.875rem;
+            font-size: 14px;
+            font-weight: 600;
             line-height: normal;
+            padding-bottom: 11px;
         }
     }
 }
@@ -118,6 +120,24 @@
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    .footer-copyright {
+        width: 100vw;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+
+        .footer-copyright-paragraf {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 11px;
         }
     }
 }

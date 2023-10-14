@@ -13,7 +13,8 @@ header.is_scrolled {
   width: 100vw;
   height: var(--logo-width);
   z-index: 100;
-  font-size: 20px; }
+  font-size: 14px;
+  font-weight: 600; }
   .site-header {
     background-color: transparent;
     transition: 0.3s; }
@@ -26,7 +27,6 @@ header.is_scrolled {
       height: var(--logo-width) !important;
       width: var(--logo-width) !important;
       margin-left: calc((100vw - var(--logo-width)) / 2 - 0.2vw);
-      margin-right: auto;
       position: absolute;
       top: 0;
       z-index: 100; }
@@ -56,7 +56,8 @@ header.is_scrolled {
           .site-header .main-navigation ul li a {
             display: block;
             text-decoration: none;
-            color: white; }
+            color: white;
+            text-transform: uppercase; }
           .site-header .main-navigation ul li ul {
             box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
             float: left;
