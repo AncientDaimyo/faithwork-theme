@@ -1,4 +1,3 @@
-<?php vicode_register_messages(); ?>
 <form id="faithwork_sign_in_form" class="faithwork_form" action="" method="POST">
     <fieldset>
         <p>
