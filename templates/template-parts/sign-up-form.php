@@ -17,7 +17,7 @@
                 <input name="faithwork_user_last" id="faithwork-user-last" type="text" class="faithwork-user-last" placeholder="Березин" />
             </div>
             <div class="account-forms">
-                <input name="faithwork_user_tel" id="tel" class="tel" type="tel" placeholder="+7 123 456 78 90" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" size="12" maxlength="12" />
+                <input name="faithwork_user_tel" id="tel" class="tel" type="tel" required="required" autocorrect="off" autocapitalize="off" pattern="^\+\d{1} \(\d{3}\) \d{3}-\d{2}-\d{2}$" minlength="19"/>
             </div>
             <div class="account-forms">
                 <input name="date" id="date" class="date" type="text" placeholder="28.08.2002" maxlength="8" max="<?php echo date("d.m.Y"); ?>" />
@@ -34,7 +34,8 @@
 </form>
 
 <script>
-    jQuery("faithwork-registration-form").on("submit", function() {
+    jQuery("#faithwork-registration-form").on("submit", function(e) {
+        e.preventDefault();
         jQuery.ajax({
             url: document.location.protocol + '//' + document.location.host + '/wp-content/themes/faithwork-theme/fw-functions/sign-up-ajax.php',
             type: 'POST',
@@ -53,13 +54,15 @@
         });
     });
 
-    jQuery('#tel').on('input', function () {
+    jQuery('#tel').on('input', function() {
         jQuery(this).val(jQuery(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''));
     });
-    
-    
-    jQuery('#date').on('input', function () {
+
+
+    jQuery('#date').on('input', function() {
         jQuery(this).val(jQuery(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''));
     });
     jQuery('#date').mask('99.99.9999');
+
+    jQuery('#tel').mask('+9 (999) 999-99-99');
 </script>

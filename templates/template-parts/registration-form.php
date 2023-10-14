@@ -1,4 +1,4 @@
-<div class="ajax-info"></div>
+<div class="ajax-info"><? faithwork_register_messages();?></div>
 
 <div class="login-register-block">
 
