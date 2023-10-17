@@ -23,6 +23,9 @@
 // components
 @import "components/marquee";
 @import "components/forms";
+@import "components/drop-down_menu.scss";
+@import "components/header-icons";
+@import "components/burger.scss";
 
 // layout
 @import "layout/body";
@@ -40,6 +43,7 @@
 @import "pages/size-guide.scss";
 @import "pages/terms-of-use";
 @import "pages/account";
+@import "pages/single-product";
 
 // themes
 

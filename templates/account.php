@@ -12,7 +12,7 @@ get_template_part('templates/template-parts/header-second');
 <main id="primary" class="site-main account-main">
     <?php
         if (is_user_logged_in()){
-
+            get_template_part('templates/template-parts/account-info');
         }
         else {
             get_template_part('templates/template-parts/registration-form');
@@ -20,4 +20,4 @@ get_template_part('templates/template-parts/header-second');
     ?>
 </main><!-- #main -->
 
-<?php get_template_part('templates/template-parts/footer-second') ?>
+<?php get_template_part('templates/template-parts/footer-second'); ?>

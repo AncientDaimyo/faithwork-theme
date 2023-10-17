@@ -1,12 +1,12 @@
 #primary.checkout-main {
-  max-height: calc(100vh - 155px - var(--logo-width));
+  min-height: calc(100vh - 155px - var(--logo-width));
   padding-top: 22px;
   position: relative; }
 
 .custom-html {
-  max-height: 100vh; }
+  min-height: 100vh; }
 
 .custom-body {
-  max-height: 100vh; }
+  min-height: 100vh; }
 
 /*# sourceMappingURL=custom.css.map */

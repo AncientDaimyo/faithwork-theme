@@ -20,7 +20,7 @@ if (!defined('_S_VERSION')) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function faithwork_theme_setup() 
+function faithwork_theme_setup()
 {
 	load_theme_textdomain('faithwork-theme', get_template_directory() . '/languages');
 	add_theme_support('automatic-feed-links');
@@ -121,7 +121,7 @@ function faithwork_theme_scripts()
 	wp_enqueue_script('faithwork-theme-menu', get_template_directory_uri() . '/assets/js/menu.js', array(), 1.0, true);
 	wp_enqueue_script('faithwork-theme-scroll', get_template_directory_uri() . '/assets/js/scroll.js', array(), 1.0, true);
 	wp_enqueue_script('faithwork-theme-marquee', get_template_directory_uri() . '/assets/js/begushyaya.js', array(), 1.0, true);
-	wp_enqueue_script('faithwork-theme-slider', get_template_directory_uri() . '/assets/js/slider.js', array(), 1.0, true);
+	// wp_enqueue_script('faithwork-theme-slider', get_template_directory_uri() . '/assets/js/slider.js', array(), 1.0, true);
 	wp_enqueue_script('faithwork-theme-ajax', get_template_directory_uri() . '/assets/js/ajax.js', array(), 1.0, true);
 
 
@@ -304,93 +304,100 @@ function bbloomer_update_item_quantity_checkout($post_data)
 
 
 // CUSTOM REGISTRATION
-function faithwork_add_new_user()
-{
-    if (isset($_POST["faithwork_user_login"]) && wp_verify_nonce($_POST['faithwork_csrf'], 'faithwork-csrf')) {
-        $user_login        = $_POST["faithwork_user_email"];
-        $user_email        = $_POST["faithwork_user_email"];
-        $user_tel         = $_POST["faithwork_user_tel"];
-        $user_first         = $_POST["faithwork_user_first"];
-        $user_last         = $_POST["faithwork_user_last"];
-        $user_pass        = $_POST["faithwork_user_pass"];
+function faithwork_add_new_user(
+	$user_login = null,
+	$user_email = null,
+	$user_tel 	= null,
+	$user_first = null,
+	$user_last 	= null,
+	$user_pass 	= null
+) {
+	if (isset($_POST["faithwork_user_email"]) && isset($_POST['faithwork_user_pass']) && wp_verify_nonce($_POST['faithwork_csrf'], 'faithwork-csrf')) {
+		$user_login        = $_POST["faithwork_user_email"];
+		$user_email        = $_POST["faithwork_user_email"];
+		$user_tel         = $_POST["faithwork_user_tel"];
+		$user_first         = $_POST["faithwork_user_first"];
+		$user_last         = $_POST["faithwork_user_last"];
+		$user_pass        = $_POST["faithwork_user_pass"];
 
-        // this is required for username checks
-        require_once(ABSPATH . WPINC . '/registration.php');
+		// this is required for username checks
+		require_once(ABSPATH . WPINC . '/registration.php');
 
-        if (username_exists($user_login)) {
-            // Username already registered
-            faithwork_errors()->add('username_unavailable', __('Username already taken'));
-        }
-        if (!validate_username($user_login)) {
-            // invalid username
-            faithwork_errors()->add('username_invalid', __('Invalid username'));
-        }
-        if ($user_login == '') {
-            // empty username
-            faithwork_errors()->add('username_empty', __('Please enter a username'));
-        }
-        if (!is_email($user_email)) {
-            //invalid email
-            faithwork_errors()->add('email_invalid', __('Invalid email'));
-        }
-        if (email_exists($user_email)) {
-            //Email address already registered
-            faithwork_errors()->add('email_used', __('Email already registered'));
-        }
-        if ($user_pass == '') {
-            // passwords do not match
-            faithwork_errors()->add('password_empty', __('Please enter a password'));
-        }
+		if (username_exists($user_login)) {
+			// Username already registered
+			faithwork_errors()->add('username_unavailable', __('Username already taken'));
+		}
+		if (!validate_username($user_login)) {
+			// invalid username
+			faithwork_errors()->add('username_invalid', __('Invalid username'));
+		}
+		if ($user_login == '') {
+			// empty username
+			faithwork_errors()->add('username_empty', __('Please enter a username'));
+		}
+		if (!is_email($user_email)) {
+			//invalid email
+			faithwork_errors()->add('email_invalid', __('Invalid email'));
+		}
+		if (email_exists($user_email)) {
+			//Email address already registered
+			faithwork_errors()->add('email_used', __('Email already registered'));
+		}
+		if ($user_pass == '') {
+			// passwords do not match
+			faithwork_errors()->add('password_empty', __('Please enter a password'));
+		}
 
-        $errors = faithwork_errors()->get_error_messages();
+		$errors = faithwork_errors()->get_error_messages();
 
-        // if no errors then cretate user
-        if (empty($errors)) {
-            $user_data = [
-                'user_login'        => $user_login,
-                'user_pass'         => $user_pass,
-                'user_email'        => $user_email,
-                'user_tel'          => $user_tel,
-                'first_name'        => $user_first,
-                'last_name'         => $user_last,
-                'user_registered'   => date('Y-m-d H:i:s')
-            ];
-            $new_user_id = wp_insert_user($user_data);
-            if ($new_user_id) {
-                // send an email to the admin
-                wp_new_user_notification($new_user_id);
+		// if no errors then cretate user
+		if (empty($errors)) {
+			$user_data = [
+				'user_login'        => $user_login,
+				'user_pass'         => $user_pass,
+				'user_email'        => $user_email,
+				'user_tel'          => $user_tel,
+				'first_name'        => $user_first,
+				'last_name'         => $user_last,
+				'user_registered'   => date('Y-m-d H:i:s'),
+				'role'				=> 'customer'
+			];
+			$new_user_id = wp_insert_user($user_data);
+			if ($new_user_id) {
+				// send an email to the admin
+				wp_new_user_notification($new_user_id);
 
-                // log the new user in
-                wp_set_auth_cookie($new_user_id, true);
-                wp_set_current_user($new_user_id, $user_login);
-                do_action('wp_login', $user_login);
+				// log the new user in
+				wp_set_auth_cookie($new_user_id, true);
+				wp_set_current_user($new_user_id, $user_login);
+				do_action('wp_login', $user_login, $new_user_id);
 
-                // send the newly created user to the home page after logging them in
-                wp_redirect(home_url());
-                exit;
-            }
-        }
-    }
+				// send the newly created user to the home page after logging them in
+				wp_redirect(home_url());
+				exit;
+			}
+		}
+	}
 }
 add_action('init', 'faithwork_add_new_user');
 
 // used for tracking error messages
 function faithwork_errors()
 {
-    static $wp_error; // global variable handle
-    return isset($wp_error) ? $wp_error : ($wp_error = new WP_Error(null, null, null));
+	static $wp_error; // global variable handle
+	return isset($wp_error) ? $wp_error : ($wp_error = new WP_Error(null, null, null));
 }
 
 // displays error messages from form submissions
 function faithwork_register_messages()
 {
-    if ($codes = faithwork_errors()->get_error_codes()) {
-        echo '<div class="faithwork_errors">';
-        // Loop error codes and display errors
-        foreach ($codes as $code) {
-            $message = faithwork_errors()->get_error_message($code);
-            echo '<span class="error"><strong>' . __('Error') . '</strong>: ' . $message . '</span><br/>';
-        }
-        echo '</div>';
-    }
+	if ($codes = faithwork_errors()->get_error_codes()) {
+		echo '<div class="faithwork_errors">';
+		// Loop error codes and display errors
+		foreach ($codes as $code) {
+			$message = faithwork_errors()->get_error_message($code);
+			echo '<span class="error"><strong>' . __('Error') . '</strong>: ' . $message . '</span><br/>';
+		}
+		echo '</div>';
+	}
 }

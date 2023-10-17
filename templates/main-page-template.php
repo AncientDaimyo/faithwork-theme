@@ -24,6 +24,6 @@ get_template_part('templates/template-parts/header-main');
     <?php get_template_part('templates/template-parts/marquee'); ?>
 
 
-    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script> -->
 </main>
 <?php get_template_part('templates/template-parts/footer-main') ?>

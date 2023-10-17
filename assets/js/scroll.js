@@ -1,11 +1,12 @@
-var header = document.querySelector('header');
-var logo1 = document.querySelector('#logo1');
-var logo2 = document.querySelector('#logo2');
-var main = document.querySelector('main');
+var header = jQuery('header');
+var logo1 = jQuery('#logo1');
+var logo2 = jQuery('#logo2');
+var main = jQuery('main');
 var minOffset = 50;
-window.addEventListener('scroll', headerScroll);
 
-function headerScroll() {
+
+
+jQuery( window ).on( "scroll", function () {
   let has_class = header.classList.contains('is_scrolled');
   let is_active = el.classList.contains('active');
   if (minOffset < document.documentElement.scrollTop) {
@@ -33,4 +34,4 @@ function headerScroll() {
       }
     });
   }
-}
+});

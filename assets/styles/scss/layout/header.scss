@@ -29,7 +29,7 @@ header.is_scrolled {
     width: 100vw;
     height: var(--logo-width);
     z-index: 100;
-    font-size: 14px ;
+    font-size: 14px;
     font-weight: 600;
     & {
         background-color: transparent;
@@ -93,7 +93,6 @@ header.is_scrolled {
                         text-decoration: none;
                         color: white;
                         text-transform: uppercase;
-
                     }
 
                     ul {
@@ -141,7 +140,7 @@ header.is_scrolled {
                     display: block;
                 }
             }
-            @import "components/burger.scss";
+
             ul {
                 display: none;
                 list-style: none;
@@ -149,8 +148,5 @@ header.is_scrolled {
                 padding-left: 0;
             }
         }
-        @import "components/drop-down_menu.scss";
     }
-
-    @import "components/header-icons";
 }

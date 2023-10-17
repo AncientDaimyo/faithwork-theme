@@ -70,7 +70,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: normal;
-      padding-bottom: 11px; }
+      padding-bottom: 22px; }
 
 .site-footer-second {
   display: flex;
@@ -82,7 +82,7 @@
   flex-shrink: 0;
   background: #EFEFEF; }
   .site-footer-second .footer-second-social {
-    height: 65px;
+    height: 90px;
     width: 100%;
     display: flex;
     flex-wrap: row;
@@ -108,6 +108,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: normal;
-      padding-bottom: 11px; }
+      padding-bottom: 22px;
+      line-height: 1.2; }
 
 /*# sourceMappingURL=footer.css.map */

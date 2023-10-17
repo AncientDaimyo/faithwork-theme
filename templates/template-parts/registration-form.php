@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="account-forms">
-                    <input name="faithwork_user_email" id="faithwork_user_email" class="faithwork_user_login" type="text" placeholder="Email" />
+                    <input name="faithwork_user_email" id="faithwork_user_email" class="faithwork_user_login" type="text" placeholder="Email" required/>
                 </div>
                 <div class="account-forms-button">
                     <input type="submit" name="send" value="ДАЛЕЕ">

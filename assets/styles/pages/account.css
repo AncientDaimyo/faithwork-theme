@@ -35,17 +35,26 @@
         flex-flow: row nowrap;
         justify-content: center; }
         .account-main .login-register-block .faithwork-form .account-full-forms fieldset {
+          position: relative;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center; }
+          .account-main .login-register-block .faithwork-form .account-full-forms fieldset .sign-up-email-text {
+            margin-top: 64px;
+            font-size: 22px;
+            font-weight: 600; }
           .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-legend {
-            display: flex;
-            justify-content: center;
+            padding: 0;
             width: 100%;
             height: auto;
-            padding-top: 44px;
-            padding-bottom: -44px; }
+            position: absolute;
+            top: -21px;
+            left: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center; }
             .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-legend .account-legend-image {
               width: 75%;
               height: auto; }
@@ -95,7 +104,5 @@
               text-align: center;
               border-radius: 4px;
               padding: 0px 22px 0px 22px; }
-              .account-main .login-register-block .faithwork-form .account-full-forms fieldset .account-forms-button input#password {
-                font-size: 22px; }
 
 /*# sourceMappingURL=account.css.map */
